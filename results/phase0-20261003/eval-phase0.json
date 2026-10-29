@@ -1,0 +1,231 @@
+{
+ "A0": {
+  "matched_recall": {
+   "audit100": {
+    "threshold": 0.48018,
+    "sensitive_removed": "156/158",
+    "harmless_deleted": "1681/37162 = 4.52%",
+    "adjacent_neighbour_removed": "119/239",
+    "sensitive_removed_by_head": {
+     "salute": "2/2",
+     "penale": "2/2",
+     "minori": "0/0",
+     "famiglia": "152/154"
+    }
+   },
+   "edge_heldout": {
+    "sensitive_removed": "328/343 = 95.6%",
+    "harmless_twin_kept": "172/343 = 50.1%",
+    "neighbour_of_sensitive_removed": "519/811"
+   }
+  },
+  "audit100_at_it1_deletion": {
+   "threshold": 0.97373,
+   "sensitive_removed": "144/158",
+   "harmless_deleted": "597/37162 = 1.61%",
+   "adjacent_neighbour_removed": "80/239",
+   "sensitive_removed_by_head": {
+    "salute": "2/2",
+    "penale": "2/2",
+    "minori": "0/0",
+    "famiglia": "140/154"
+   }
+  },
+  "v1_thresholds": {
+   "audit100": {
+    "threshold": 1.0,
+    "sensitive_removed": "157/158",
+    "harmless_deleted": "2095/37162 = 5.64%",
+    "adjacent_neighbour_removed": "134/239",
+    "sensitive_removed_by_head": {
+     "salute": "2/2",
+     "penale": "2/2",
+     "minori": "0/0",
+     "famiglia": "153/154"
+    }
+   }
+  }
+ },
+ "it1": {
+  "matched_recall": {
+   "audit100": {
+    "threshold": 0.06013,
+    "sensitive_removed": "156/158",
+    "harmless_deleted": "828/37162 = 2.23%",
+    "adjacent_neighbour_removed": "86/239",
+    "sensitive_removed_by_head": {
+     "salute": "2/2",
+     "penale": "2/2",
+     "minori": "0/0",
+     "famiglia": "152/154"
+    }
+   },
+   "edge_heldout": {
+    "sensitive_removed": "318/343 = 92.7%",
+    "harmless_twin_kept": "210/343 = 61.2%",
+    "neighbour_of_sensitive_removed": "148/811"
+   }
+  },
+  "audit100_at_it1_deletion": {
+   "threshold": 0.15941,
+   "sensitive_removed": "153/158",
+   "harmless_deleted": "586/37162 = 1.58%",
+   "adjacent_neighbour_removed": "74/239",
+   "sensitive_removed_by_head": {
+    "salute": "2/2",
+    "penale": "2/2",
+    "minori": "0/0",
+    "famiglia": "149/154"
+   }
+  },
+  "v1_thresholds": {
+   "audit100": {
+    "threshold": 1.0,
+    "sensitive_removed": "155/158",
+    "harmless_deleted": "597/37162 = 1.61%",
+    "adjacent_neighbour_removed": "85/239",
+    "sensitive_removed_by_head": {
+     "salute": "2/2",
+     "penale": "2/2",
+     "minori": "0/0",
+     "famiglia": "151/154"
+    }
+   }
+  }
+ },
+ "student-25": {
+  "audit100": {
+   "threshold": 0.01268,
+   "sensitive_removed": "156/158",
+   "harmless_deleted": "22883/37162 = 61.58%",
+   "adjacent_neighbour_removed": "225/239",
+   "sensitive_removed_by_head": {
+    "salute": "2/2",
+    "penale": "2/2",
+    "minori": "0/0",
+    "famiglia": "152/154"
+   }
+  },
+  "audit100_at_it1_deletion": {
+   "threshold": 0.81285,
+   "sensitive_removed": "121/158",
+   "harmless_deleted": "595/37162 = 1.60%",
+   "adjacent_neighbour_removed": "102/239",
+   "sensitive_removed_by_head": {
+    "salute": "0/2",
+    "penale": "0/2",
+    "minori": "0/0",
+    "famiglia": "121/154"
+   }
+  },
+  "probe_heldout": {
+   "labels_from": "A+B",
+   "gate_keep_accuracy": "10/109 = 9.2%",
+   "gate_keep_by_stratum": {
+    "hypothetical_person": "5/21",
+    "sensitive": "0/7",
+    "negated_or_absent": "5/71",
+    "not_living": "0/5",
+    "near_negative": "0/2",
+    "company_only_non_criminal": "0/3"
+   },
+   "positives_removed": "77/77"
+  },
+  "edge_heldout": {
+   "sensitive_removed": "327/343 = 95.3%",
+   "harmless_twin_kept": "72/343 = 21.0%",
+   "neighbour_of_sensitive_removed": "688/811"
+  },
+  "redactor_check": "3/3 documents identical"
+ },
+ "student-50": {
+  "audit100": {
+   "threshold": 0.02335,
+   "sensitive_removed": "156/158",
+   "harmless_deleted": "21889/37162 = 58.90%",
+   "adjacent_neighbour_removed": "219/239",
+   "sensitive_removed_by_head": {
+    "salute": "1/2",
+    "penale": "2/2",
+    "minori": "0/0",
+    "famiglia": "153/154"
+   }
+  },
+  "audit100_at_it1_deletion": {
+   "threshold": 0.78738,
+   "sensitive_removed": "142/158",
+   "harmless_deleted": "597/37162 = 1.61%",
+   "adjacent_neighbour_removed": "138/239",
+   "sensitive_removed_by_head": {
+    "salute": "0/2",
+    "penale": "0/2",
+    "minori": "0/0",
+    "famiglia": "142/154"
+   }
+  },
+  "probe_heldout": {
+   "labels_from": "A+B",
+   "gate_keep_accuracy": "10/109 = 9.2%",
+   "gate_keep_by_stratum": {
+    "hypothetical_person": "6/21",
+    "sensitive": "0/7",
+    "negated_or_absent": "4/71",
+    "not_living": "0/5",
+    "near_negative": "0/2",
+    "company_only_non_criminal": "0/3"
+   },
+   "positives_removed": "77/77"
+  },
+  "edge_heldout": {
+   "sensitive_removed": "325/343 = 94.8%",
+   "harmless_twin_kept": "77/343 = 22.4%",
+   "neighbour_of_sensitive_removed": "652/811"
+  },
+  "redactor_check": "2/3 documents identical"
+ },
+ "student-100": {
+  "audit100": {
+   "threshold": 0.00264,
+   "sensitive_removed": "156/158",
+   "harmless_deleted": "30101/37162 = 81.00%",
+   "adjacent_neighbour_removed": "230/239",
+   "sensitive_removed_by_head": {
+    "salute": "1/2",
+    "penale": "2/2",
+    "minori": "0/0",
+    "famiglia": "153/154"
+   }
+  },
+  "audit100_at_it1_deletion": {
+   "threshold": 0.40067,
+   "sensitive_removed": "148/158",
+   "harmless_deleted": "597/37162 = 1.61%",
+   "adjacent_neighbour_removed": "107/239",
+   "sensitive_removed_by_head": {
+    "salute": "0/2",
+    "penale": "2/2",
+    "minori": "0/0",
+    "famiglia": "146/154"
+   }
+  },
+  "probe_heldout": {
+   "labels_from": "A+B",
+   "gate_keep_accuracy": "0/109 = 0.0%",
+   "gate_keep_by_stratum": {
+    "hypothetical_person": "0/21",
+    "sensitive": "0/7",
+    "negated_or_absent": "0/71",
+    "not_living": "0/5",
+    "near_negative": "0/2",
+    "company_only_non_criminal": "0/3"
+   },
+   "positives_removed": "77/77"
+  },
+  "edge_heldout": {
+   "sensitive_removed": "342/343 = 99.7%",
+   "harmless_twin_kept": "17/343 = 5.0%",
+   "neighbour_of_sensitive_removed": "801/811"
+  },
+  "redactor_check": "2/3 documents identical"
+ }
+}

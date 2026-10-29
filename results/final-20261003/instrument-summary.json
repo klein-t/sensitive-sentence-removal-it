@@ -1,0 +1,57 @@
+{
+ "split_test": 609,
+ "split_validation": 233,
+ "edge_gram_overlap_dropped": 183,
+ "split_train": 26,
+ "unseen_documents": 868,
+ "deletion_documents": 200,
+ "positives_side_documents": 338,
+ "population_sentences": 56094,
+ "population_long_sentences_skipped": 177,
+ "bins": {
+  "[0.0,0.005)": [
+   11052,
+   286
+  ],
+  "[0.005,0.02)": [
+   36252,
+   286
+  ],
+  "[0.02,0.1)": [
+   3453,
+   286
+  ],
+  "[0.1,0.3)": [
+   1410,
+   286
+  ],
+  "[0.3,0.6)": [
+   919,
+   285
+  ],
+  "[0.6,0.9)": [
+   886,
+   285
+  ],
+  "[0.9,1.01)": [
+   2122,
+   286
+  ]
+ },
+ "deletion_units": 2000,
+ "cue_hits": {
+  "salute": 26,
+  "penale": 301,
+  "minori": 6277,
+  "famiglia": 1690,
+  "salute_broad": 602
+ },
+ "positive_candidates": {
+  "cue_salute": 26,
+  "cue_salute_broad": 150,
+  "cue_penale": 149,
+  "cue_minori": 118,
+  "cue_famiglia": 197,
+  "score_tranche": 150
+ }
+}

@@ -1,0 +1,131 @@
+{
+ "A0": {
+  "thresholds": [
+   0.48018,
+   0.48018,
+   0.48018,
+   0.48018
+  ],
+  "audit100": {
+   "sensitive_removed": "156/158",
+   "harmless_deleted": "4.52%",
+   "bleed": "119/239",
+   "doc_leak": "1/39",
+   "_recall_hits": 156
+  },
+  "instrument": {
+   "ipw_harmless_deleted": "5.16% [4.64%, 5.80%]",
+   "_ipw": 0.05163285352284202,
+   "neighbour_bleed": "346/600",
+   "held_out_recall": "370/372 = 99.5% [98.1%, 99.9%]",
+   "_recall": 0.9946236559139785,
+   "held_out_recall_cue_mined_only": "113/115 = 98.3% [93.9%, 99.8%]",
+   "held_out_recall_by_head": {
+    "salute": "2/2 = 100.0% [15.8%, 100.0%]",
+    "penale": "2/2 = 100.0% [15.8%, 100.0%]",
+    "minori": "7/7 = 100.0% [59.0%, 100.0%]",
+    "famiglia": "367/369 = 99.5% [98.1%, 99.9%]"
+   },
+   "held_out_doc_leak": "2/116"
+  }
+ },
+ "it1": {
+  "thresholds": [
+   0.06013,
+   0.06013,
+   0.06013,
+   0.06013
+  ],
+  "audit100": {
+   "sensitive_removed": "156/158",
+   "harmless_deleted": "2.23%",
+   "bleed": "86/239",
+   "doc_leak": "2/39",
+   "_recall_hits": 156
+  },
+  "instrument": {
+   "ipw_harmless_deleted": "2.29% [1.98%, 2.69%]",
+   "_ipw": 0.02289468764660754,
+   "neighbour_bleed": "237/600",
+   "held_out_recall": "359/372 = 96.5% [94.1%, 98.1%]",
+   "_recall": 0.9650537634408602,
+   "held_out_recall_cue_mined_only": "110/115 = 95.7% [90.1%, 98.6%]",
+   "held_out_recall_by_head": {
+    "salute": "2/2 = 100.0% [15.8%, 100.0%]",
+    "penale": "2/2 = 100.0% [15.8%, 100.0%]",
+    "minori": "7/7 = 100.0% [59.0%, 100.0%]",
+    "famiglia": "356/369 = 96.5% [94.1%, 98.1%]"
+   },
+   "held_out_doc_leak": "4/116"
+  }
+ },
+ "RunA": {
+  "thresholds": [
+   0.01818,
+   0.01818,
+   0.01818,
+   0.01818
+  ],
+  "audit100": {
+   "sensitive_removed": "156/158",
+   "harmless_deleted": "13.94%",
+   "bleed": "213/239",
+   "doc_leak": "2/39",
+   "_recall_hits": 156
+  },
+  "instrument": {
+   "ipw_harmless_deleted": "12.80% [10.74%, 15.18%]",
+   "_ipw": 0.1279710066876845,
+   "neighbour_bleed": "580/600",
+   "held_out_recall": "369/372 = 99.2% [97.7%, 99.8%]",
+   "_recall": 0.9919354838709677,
+   "held_out_recall_cue_mined_only": "112/115 = 97.4% [92.6%, 99.5%]",
+   "held_out_recall_by_head": {
+    "salute": "2/2 = 100.0% [15.8%, 100.0%]",
+    "penale": "2/2 = 100.0% [15.8%, 100.0%]",
+    "minori": "7/7 = 100.0% [59.0%, 100.0%]",
+    "famiglia": "366/369 = 99.2% [97.6%, 99.8%]"
+   },
+   "held_out_doc_leak": "3/116"
+  }
+ },
+ "A0_production": {
+  "thresholds": [
+   0.0384,
+   0.40721,
+   0.02048,
+   0.07239
+  ],
+  "audit100": {
+   "sensitive_removed": "157/158",
+   "harmless_deleted": "5.64%",
+   "bleed": "134/239",
+   "doc_leak": "1/39",
+   "_recall_hits": 157
+  },
+  "instrument": {
+   "ipw_harmless_deleted": "7.25% [6.56%, 8.05%]",
+   "_ipw": 0.07247930764818339,
+   "neighbour_bleed": "410/600",
+   "held_out_recall": "371/372 = 99.7% [98.5%, 100.0%]",
+   "_recall": 0.9973118279569892,
+   "held_out_recall_cue_mined_only": "114/115 = 99.1% [95.3%, 100.0%]",
+   "held_out_recall_by_head": {
+    "salute": "2/2 = 100.0% [15.8%, 100.0%]",
+    "penale": "2/2 = 100.0% [15.8%, 100.0%]",
+    "minori": "7/7 = 100.0% [59.0%, 100.0%]",
+    "famiglia": "368/369 = 99.7% [98.5%, 100.0%]"
+   },
+   "held_out_doc_leak": "1/116"
+  }
+ },
+ "winner": {
+  "model": "A0_production",
+  "thresholds": [
+   0.0384,
+   0.40721,
+   0.02048,
+   0.07239
+  ]
+ }
+}

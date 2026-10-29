@@ -1,0 +1,31 @@
+{
+ "sol_tokens": 2602096,
+ "units": 500,
+ "labelled_both": 500,
+ "uncertain": 15,
+ "positive": 242,
+ "pass_agreement": {
+  "units": 500,
+  "remove_any": "491/500 = 98.2%",
+  "remove_any_kappa": 0.964,
+  "remove_exact_heads": "485/500 = 97.0%",
+  "remove_per_head": {
+   "salute": "495/500 = 99.0%",
+   "penale": "493/500 = 98.6%",
+   "minori": "499/500 = 99.8%",
+   "famiglia": "497/500 = 99.4%"
+  },
+  "topics_exact": "485/500 = 97.0%",
+  "subject": "475/500 = 95.0%",
+  "assertion": "486/500 = 97.2%",
+  "removed_by_first": 251,
+  "removed_by_second": 254,
+  "either_uncertain": 0
+ },
+ "positive_heads": {
+  "famiglia": 89,
+  "salute": 56,
+  "penale": 172,
+  "minori": 36
+ }
+}

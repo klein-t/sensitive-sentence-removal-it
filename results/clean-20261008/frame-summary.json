@@ -1,0 +1,23 @@
+{
+ "pool_documents_validation": 1230,
+ "not_appraisal": 766,
+ "pool_documents_test": 1199,
+ "appraisal_documents": 1663,
+ "pool_groups": 2384,
+ "excluded_groups_any_reason": 2074,
+ "excluded_groups_by_reason": {
+  "audit100_audit15": 99,
+  "calibration_validation_slices": 1611,
+  "edge_suite_12gram": 317,
+  "final_instrument": 459,
+  "other_prior_use": 1065,
+  "training_v1_it1_it2_phase0_runA": 881,
+  "v1_stratified_final_evaluation": 1034
+ },
+ "frame_documents": 122,
+ "frame_groups": 122,
+ "frame_by_split": {
+  "validation": 116,
+  "test": 6
+ }
+}

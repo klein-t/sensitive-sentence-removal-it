@@ -1,0 +1,103 @@
+{
+ "throughput": {
+  "units": 1184,
+  "units_per_second": 0.244,
+  "concurrency": 1,
+  "failed_after_reask": 0,
+  "reasked": 1,
+  "mean_prompt_tokens": 1225,
+  "mean_completion_tokens": 65
+ },
+ "llm_raw": {
+  "uncertain_by_origin": {
+   "cue_minori": 1,
+   "non_cue": 5
+  },
+  "salute": {
+   "positives": 0,
+   "groups": 0,
+   "from_non_cue_sample": 0,
+   "max_per_group": 0,
+   "recall_removed": "0/0",
+   "recall_same_head": "0/0"
+  },
+  "penale": {
+   "positives": 0,
+   "groups": 0,
+   "from_non_cue_sample": 0,
+   "max_per_group": 0,
+   "recall_removed": "0/0",
+   "recall_same_head": "0/0"
+  },
+  "minori": {
+   "positives": 3,
+   "groups": 2,
+   "from_non_cue_sample": 0,
+   "max_per_group": 2,
+   "recall_removed": "0/3 = 0.0% [0.0%, 56.1%]",
+   "recall_same_head": "0/3 = 0.0% [0.0%, 56.1%]"
+  },
+  "famiglia": {
+   "positives": 28,
+   "groups": 14,
+   "from_non_cue_sample": 3,
+   "max_per_group": 6,
+   "recall_removed": "0/28 = 0.0% [0.0%, 12.1%]",
+   "recall_same_head": "0/28 = 0.0% [0.0%, 12.1%]"
+  },
+  "harmless_cue_deleted": {
+   "salute": "0/292 = 0.0% [0.0%, 1.3%]",
+   "minori": "1/310 = 0.3% [0.1%, 1.8%]",
+   "penale": "17/271 = 6.3% [4.0%, 9.8%]",
+   "non_cue": "0/292 = 0.0% [0.0%, 1.3%]"
+  },
+  "doc_leak_rare_classes": "2/2"
+ },
+ "llm_composed": {
+  "uncertain_by_origin": {
+   "cue_minori": 1,
+   "non_cue": 5
+  },
+  "salute": {
+   "positives": 0,
+   "groups": 0,
+   "from_non_cue_sample": 0,
+   "max_per_group": 0,
+   "recall_removed": "0/0",
+   "recall_same_head": "0/0"
+  },
+  "penale": {
+   "positives": 0,
+   "groups": 0,
+   "from_non_cue_sample": 0,
+   "max_per_group": 0,
+   "recall_removed": "0/0",
+   "recall_same_head": "0/0"
+  },
+  "minori": {
+   "positives": 3,
+   "groups": 2,
+   "from_non_cue_sample": 0,
+   "max_per_group": 2,
+   "recall_removed": "2/3 = 66.7% [20.8%, 93.9%]",
+   "recall_same_head": "2/3 = 66.7% [20.8%, 93.9%]"
+  },
+  "famiglia": {
+   "positives": 28,
+   "groups": 14,
+   "from_non_cue_sample": 3,
+   "max_per_group": 6,
+   "recall_removed": "15/28 = 53.6% [35.8%, 70.5%]",
+   "recall_same_head": "12/28 = 42.9% [26.5%, 60.9%]"
+  },
+  "harmless_cue_deleted": {
+   "salute": "0/292 = 0.0% [0.0%, 1.3%]",
+   "minori": "1/310 = 0.3% [0.1%, 1.8%]",
+   "penale": "6/271 = 2.2% [1.0%, 4.7%]",
+   "non_cue": "0/292 = 0.0% [0.0%, 1.3%]"
+  },
+  "doc_leak_rare_classes": "1/2"
+ },
+ "model": "lmstudio-community/gemma-4-12b-it-MLX-4bit",
+ "runtime": "LM Studio MLX 4-bit"
+}

@@ -1,0 +1,80 @@
+{
+ "model": "it3m",
+ "thresholds": [
+  0.03840220347046852,
+  0.4072083532810211,
+  0.020479485392570496,
+  0.0723867416381836
+ ],
+ "rule": "min IPW dev deletion s.t. dev recall overall and per head >= A0's at production",
+ "min_dev_positives_to_raise_a_head": 20,
+ "dev_A0_production": {
+  "recall": 16,
+  "positives": 16,
+  "per_head": {
+   "salute": [
+    0,
+    0
+   ],
+   "penale": [
+    0,
+    0
+   ],
+   "minori": [
+    0,
+    0
+   ],
+   "famiglia": [
+    16,
+    16
+   ]
+  },
+  "ipw_deletion": 0.04536162412245734
+ },
+ "dev_model_A0_fixed": {
+  "recall": 16,
+  "positives": 16,
+  "per_head": {
+   "salute": [
+    0,
+    0
+   ],
+   "penale": [
+    0,
+    0
+   ],
+   "minori": [
+    0,
+    0
+   ],
+   "famiglia": [
+    16,
+    16
+   ]
+  },
+  "ipw_deletion": 0.01220852603507927
+ },
+ "dev_model_chosen": {
+  "recall": 16,
+  "positives": 16,
+  "per_head": {
+   "salute": [
+    0,
+    0
+   ],
+   "penale": [
+    0,
+    0
+   ],
+   "minori": [
+    0,
+    0
+   ],
+   "famiglia": [
+    16,
+    16
+   ]
+  },
+  "ipw_deletion": 0.01220852603507927
+ }
+}

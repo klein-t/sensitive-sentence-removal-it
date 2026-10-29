@@ -1,0 +1,123 @@
+{
+ "A0_production_thresholds": {
+  "thresholds": [
+   0.0384,
+   0.4072,
+   0.0205,
+   0.0724
+  ],
+  "audit100": {
+   "sensitive_removed": "157/158",
+   "harmless_deleted": "2095/37162 = 5.64%",
+   "adjacent_neighbour_removed": "134/239"
+  },
+  "edge_heldout": {
+   "sensitive_removed": "330/343 = 96.2%",
+   "harmless_twin_kept": "143/343 = 41.7%",
+   "neighbour_of_sensitive_removed": "543/811"
+  },
+  "context_probe": {
+   "original": "TP 42/42, FP 51/238",
+   "padded": "TP 41/42, FP 14/238"
+  }
+ },
+ "A0_recalibrated": {
+  "thresholds": [
+   0.0025,
+   0.0123,
+   0.0208,
+   0.0235
+  ],
+  "audit100": {
+   "sensitive_removed": "158/158",
+   "harmless_deleted": "12633/37162 = 33.99%",
+   "adjacent_neighbour_removed": "173/239"
+  },
+  "edge_heldout": {
+   "sensitive_removed": "342/343 = 99.7%",
+   "harmless_twin_kept": "31/343 = 9.0%",
+   "neighbour_of_sensitive_removed": "704/811"
+  },
+  "context_probe": {
+   "original": "TP 42/42, FP 149/238",
+   "padded": "TP 41/42, FP 103/238"
+  }
+ },
+ "model_recalibrated": {
+  "thresholds": [
+   0.0013,
+   0.0058,
+   0.0169,
+   0.0149
+  ],
+  "audit100": {
+   "sensitive_removed": "158/158",
+   "harmless_deleted": "14658/37162 = 39.44%",
+   "adjacent_neighbour_removed": "167/239"
+  },
+  "edge_heldout": {
+   "sensitive_removed": "341/343 = 99.4%",
+   "harmless_twin_kept": "34/343 = 9.9%",
+   "neighbour_of_sensitive_removed": "577/811"
+  },
+  "context_probe": {
+   "original": "TP 42/42, FP 147/238",
+   "padded": "TP 41/42, FP 124/238"
+  }
+ },
+ "model_v1_thresholds": {
+  "thresholds": [
+   0.0384,
+   0.4072,
+   0.0205,
+   0.0724
+  ],
+  "audit100": {
+   "sensitive_removed": "155/158",
+   "harmless_deleted": "597/37162 = 1.61%",
+   "adjacent_neighbour_removed": "85/239"
+  },
+  "edge_heldout": {
+   "sensitive_removed": "317/343 = 92.4%",
+   "harmless_twin_kept": "234/343 = 68.2%",
+   "neighbour_of_sensitive_removed": "107/811"
+  },
+  "context_probe": {
+   "original": "TP 42/42, FP 35/238",
+   "padded": "TP 41/42, FP 22/238"
+  }
+ },
+ "model_sol_dev_recalibrated": {
+  "thresholds": [
+   0.9973,
+   0.7709,
+   0.0018,
+   0.0057
+  ],
+  "audit100": {
+   "sensitive_removed": "157/158",
+   "harmless_deleted": "20344/37162 = 54.74%",
+   "adjacent_neighbour_removed": "183/239"
+  },
+  "edge_heldout": {
+   "sensitive_removed": "330/343 = 96.2%",
+   "harmless_twin_kept": "122/343 = 35.6%",
+   "neighbour_of_sensitive_removed": "469/811"
+  },
+  "context_probe": {
+   "original": "TP 37/42, FP 94/238",
+   "padded": "TP 30/42, FP 81/238"
+  }
+ },
+ "dev_slice": {
+  "rows": 1625,
+  "positives_per_head": {
+   "salute": 43,
+   "penale": 80,
+   "minori": 163,
+   "famiglia": 367
+  },
+  "sol_rows": 288,
+  "recall_target": 0.98
+ }
+}

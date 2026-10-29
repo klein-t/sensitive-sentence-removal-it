@@ -1,0 +1,57 @@
+{
+ "throughput": {
+  "positive": {
+   "units": 372,
+   "units_per_second": 0.137,
+   "concurrency": 1,
+   "failed_after_reask": 0,
+   "reasked": 1,
+   "mean_prompt_tokens": 1257,
+   "mean_completion_tokens": 67
+  },
+  "deletion": {
+   "units": 600,
+   "units_per_second": 0.143,
+   "concurrency": 1,
+   "failed_after_reask": 2,
+   "reasked": 4,
+   "mean_prompt_tokens": 1179,
+   "mean_completion_tokens": 65
+  }
+ },
+ "llm_raw": {
+  "held_out_recall": "13/372 = 3.5% [1.9%, 5.9%]",
+  "held_out_recall_by_head": {
+   "salute": "0/2 = 0.0% [0.0%, 84.2%]",
+   "penale": "1/2 = 50.0% [1.3%, 98.7%]",
+   "minori": "0/7 = 0.0% [0.0%, 41.0%]",
+   "famiglia": "12/369 = 3.3% [1.7%, 5.6%]"
+  },
+  "held_out_doc_leak": "114/116",
+  "ipw_harmless_deleted": "0.44% [0.20%, 0.71%] (n=600)"
+ },
+ "llm_composed": {
+  "held_out_recall": "234/372 = 62.9% [57.8%, 67.8%]",
+  "held_out_recall_by_head": {
+   "salute": "1/2 = 50.0% [1.3%, 98.7%]",
+   "penale": "0/2 = 0.0% [0.0%, 84.2%]",
+   "minori": "7/7 = 100.0% [59.0%, 100.0%]",
+   "famiglia": "234/369 = 63.4% [58.3%, 68.3%]"
+  },
+  "held_out_doc_leak": "65/116",
+  "ipw_harmless_deleted": "0.00% [0.00%, 0.00%] (n=600)"
+ },
+ "a0_production": {
+  "held_out_recall": "371/372 = 99.7% [98.5%, 100.0%]",
+  "held_out_recall_by_head": {
+   "salute": "2/2 = 100.0% [15.8%, 100.0%]",
+   "penale": "2/2 = 100.0% [15.8%, 100.0%]",
+   "minori": "7/7 = 100.0% [59.0%, 100.0%]",
+   "famiglia": "368/369 = 99.7% [98.5%, 100.0%]"
+  },
+  "held_out_doc_leak": "1/116",
+  "ipw_harmless_deleted": "7.27% [6.00%, 8.79%] (n=600)"
+ },
+ "model": "lmstudio-community/gemma-4-12b-it-MLX-4bit",
+ "runtime": "LM Studio MLX 4-bit"
+}

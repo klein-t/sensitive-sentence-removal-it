@@ -1,0 +1,355 @@
+{
+ "db_available": true,
+ "lexicon": "words in >= 5 corpus documents (32319 types)",
+ "splits": {
+  "train": {
+   "documents": 3521,
+   "tribunal_known": 3508,
+   "tribunal_source": {
+    "db": 3498,
+    "facts": 10,
+    "none": 13
+   },
+   "distinct_tribunals": 152,
+   "top10_tribunal_share": "803/3508 = 22.9%",
+   "macro_area": {
+    "Sud e Isole": "1224/3521 = 34.8%",
+    "Centro": "931/3521 = 26.4%",
+    "Nord-Ovest": "899/3521 = 25.5%",
+    "Nord-Est": "389/3521 = 11.0%",
+    "unknown": "78/3521 = 2.2%"
+   },
+   "distinct_regions": 20,
+   "auction_year": {
+    "2026": 3513,
+    "2027": 1,
+    "2028": 1,
+    "2029": 1,
+    "2030": 5
+   },
+   "perizia_year_extracted": {
+    "n": 2427,
+    "median": 2025.0,
+    "q1": 2024.0,
+    "q3": 2026.0
+   },
+   "attachment_type": {
+    "PERIZ": 2333,
+    "ORDIN": 489,
+    "AVEND": 592,
+    "STIMA": 107
+   },
+   "sentences_per_doc": {
+    "n": 3521,
+    "median": 180.0,
+    "q1": 120.5,
+    "q3": 286.0
+   },
+   "ocr_proxies": {
+    "non_lexicon_word_rate": "1.59%",
+    "docs_with_broken_hyphenation": "7.2%",
+    "broken_hyphens_per_10k_words": 2.61,
+    "garbage_char_rate": "0.170%",
+    "docs_with_garbage_over_1pct": "0.5%"
+   },
+   "near_duplicate_groups": 3461,
+   "group_size_distribution": {
+    "1": 3431,
+    "2": 16,
+    "3": 5,
+    "4": 5,
+    "5": 3,
+    "8": 1
+   }
+  },
+  "validation": {
+   "documents": 1230,
+   "tribunal_known": 1224,
+   "tribunal_source": {
+    "db": 1221,
+    "none": 6,
+    "facts": 3
+   },
+   "distinct_tribunals": 135,
+   "top10_tribunal_share": "304/1224 = 24.8%",
+   "macro_area": {
+    "Sud e Isole": "446/1230 = 36.3%",
+    "Centro": "342/1230 = 27.8%",
+    "Nord-Ovest": "285/1230 = 23.2%",
+    "Nord-Est": "137/1230 = 11.1%",
+    "unknown": "20/1230 = 1.6%"
+   },
+   "distinct_regions": 20,
+   "auction_year": {
+    "2021": 1,
+    "2026": 1228,
+    "2027": 1
+   },
+   "perizia_year_extracted": {
+    "n": 858,
+    "median": 2025.0,
+    "q1": 2024.0,
+    "q3": 2026.0
+   },
+   "attachment_type": {
+    "ORDIN": 172,
+    "PERIZ": 799,
+    "STIMA": 37,
+    "AVEND": 222
+   },
+   "sentences_per_doc": {
+    "n": 1230,
+    "median": 189.0,
+    "q1": 126.0,
+    "q3": 277.25
+   },
+   "ocr_proxies": {
+    "non_lexicon_word_rate": "1.67%",
+    "docs_with_broken_hyphenation": "7.6%",
+    "broken_hyphens_per_10k_words": 1.9,
+    "garbage_char_rate": "0.125%",
+    "docs_with_garbage_over_1pct": "0.2%"
+   },
+   "near_duplicate_groups": 1194,
+   "group_size_distribution": {
+    "1": 1182,
+    "16": 1,
+    "2": 8,
+    "4": 1,
+    "5": 1,
+    "7": 1
+   }
+  },
+  "test": {
+   "documents": 1199,
+   "tribunal_known": 1194,
+   "tribunal_source": {
+    "db": 1191,
+    "none": 5,
+    "facts": 3
+   },
+   "distinct_tribunals": 135,
+   "top10_tribunal_share": "319/1194 = 26.7%",
+   "macro_area": {
+    "Sud e Isole": "404/1199 = 33.7%",
+    "Centro": "333/1199 = 27.8%",
+    "Nord-Ovest": "296/1199 = 24.7%",
+    "Nord-Est": "139/1199 = 11.6%",
+    "unknown": "27/1199 = 2.3%"
+   },
+   "distinct_regions": 20,
+   "auction_year": {
+    "2026": 1196,
+    "2027": 1,
+    "2030": 2
+   },
+   "perizia_year_extracted": {
+    "n": 845,
+    "median": 2025.0,
+    "q1": 2024.0,
+    "q3": 2026.0
+   },
+   "attachment_type": {
+    "ORDIN": 165,
+    "PERIZ": 785,
+    "STIMA": 42,
+    "AVEND": 207
+   },
+   "sentences_per_doc": {
+    "n": 1199,
+    "median": 182.0,
+    "q1": 122.0,
+    "q3": 292.0
+   },
+   "ocr_proxies": {
+    "non_lexicon_word_rate": "1.64%",
+    "docs_with_broken_hyphenation": "7.6%",
+    "broken_hyphens_per_10k_words": 1.19,
+    "garbage_char_rate": "0.169%",
+    "docs_with_garbage_over_1pct": "0.8%"
+   },
+   "near_duplicate_groups": 1190,
+   "group_size_distribution": {
+    "1": 1182,
+    "2": 7,
+    "3": 1
+   }
+  },
+  "audit100": {
+   "documents": 100,
+   "tribunal_known": 100,
+   "tribunal_source": {
+    "db": 99,
+    "facts": 1
+   },
+   "distinct_tribunals": 49,
+   "top10_tribunal_share": "41/100 = 41.0%",
+   "macro_area": {
+    "Centro": "33/100 = 33.0%",
+    "Sud e Isole": "27/100 = 27.0%",
+    "Nord-Ovest": "24/100 = 24.0%",
+    "Nord-Est": "14/100 = 14.0%",
+    "unknown": "2/100 = 2.0%"
+   },
+   "distinct_regions": 17,
+   "auction_year": {
+    "2026": 100
+   },
+   "perizia_year_extracted": {
+    "n": 76,
+    "median": 2025.0,
+    "q1": 2023.0,
+    "q3": 2026.0
+   },
+   "attachment_type": {
+    "PERIZ": 68,
+    "ORDIN": 12,
+    "STIMA": 2,
+    "AVEND": 18
+   },
+   "sentences_per_doc": {
+    "n": 100,
+    "median": 175.0,
+    "q1": 123.0,
+    "q3": 290.25
+   },
+   "ocr_proxies": {
+    "non_lexicon_word_rate": "2.24%",
+    "docs_with_broken_hyphenation": "8.0%",
+    "broken_hyphens_per_10k_words": 1.54,
+    "garbage_char_rate": "0.059%",
+    "docs_with_garbage_over_1pct": "0.0%"
+   },
+   "near_duplicate_groups": 99,
+   "group_size_distribution": {
+    "1": 98,
+    "2": 1
+   }
+  },
+  "heldout_instrument": {
+   "documents": 458,
+   "tribunal_known": 458,
+   "tribunal_source": {
+    "db": 458
+   },
+   "distinct_tribunals": 109,
+   "top10_tribunal_share": "140/458 = 30.6%",
+   "macro_area": {
+    "Sud e Isole": "136/458 = 29.7%",
+    "Nord-Ovest": "125/458 = 27.3%",
+    "Centro": "122/458 = 26.6%",
+    "Nord-Est": "64/458 = 14.0%",
+    "unknown": "11/458 = 2.4%"
+   },
+   "distinct_regions": 20,
+   "auction_year": {
+    "2026": 458
+   },
+   "perizia_year_extracted": {
+    "n": 437,
+    "median": 2025.0,
+    "q1": 2024.0,
+    "q3": 2026.0
+   },
+   "attachment_type": {
+    "PERIZ": 439,
+    "STIMA": 19
+   },
+   "sentences_per_doc": {
+    "n": 458,
+    "median": 220.0,
+    "q1": 133.0,
+    "q3": 368.25
+   },
+   "ocr_proxies": {
+    "non_lexicon_word_rate": "1.90%",
+    "docs_with_broken_hyphenation": "8.3%",
+    "broken_hyphens_per_10k_words": 1.67,
+    "garbage_char_rate": "0.063%",
+    "docs_with_garbage_over_1pct": "0.2%"
+   },
+   "near_duplicate_groups": 458,
+   "group_size_distribution": {
+    "1": 458
+   }
+  },
+  "clean_frame": {
+   "documents": 116,
+   "tribunal_known": 116,
+   "tribunal_source": {
+    "db": 116
+   },
+   "distinct_tribunals": 61,
+   "top10_tribunal_share": "48/116 = 41.4%",
+   "macro_area": {
+    "Centro": "40/116 = 34.5%",
+    "Nord-Ovest": "29/116 = 25.0%",
+    "Sud e Isole": "28/116 = 24.1%",
+    "Nord-Est": "17/116 = 14.7%",
+    "unknown": "2/116 = 1.7%"
+   },
+   "distinct_regions": 18,
+   "auction_year": {
+    "2026": 116
+   },
+   "perizia_year_extracted": {
+    "n": 106,
+    "median": 2025.0,
+    "q1": 2023.0,
+    "q3": 2025.0
+   },
+   "attachment_type": {
+    "PERIZ": 113,
+    "STIMA": 3
+   },
+   "sentences_per_doc": {
+    "n": 116,
+    "median": 170.5,
+    "q1": 105.25,
+    "q3": 283.75
+   },
+   "ocr_proxies": {
+    "non_lexicon_word_rate": "1.72%",
+    "docs_with_broken_hyphenation": "10.3%",
+    "broken_hyphens_per_10k_words": 1.2,
+    "garbage_char_rate": "0.425%",
+    "docs_with_garbage_over_1pct": "0.9%"
+   },
+   "near_duplicate_groups": 116,
+   "group_size_distribution": {
+    "1": 116
+   }
+  }
+ },
+ "cassazione": {
+  "decisions": 847,
+  "kind": {
+   "civil": 545,
+   "criminal": 302
+  },
+  "provision_type": {
+   "Sentenza": 379,
+   "Ordinanza": 452,
+   "Ordinanza Interlocutoria": 13,
+   "Decreto": 3
+  },
+  "year_range": [
+   2021,
+   2026
+  ],
+  "year_distribution": {
+   "2021": 30,
+   "2022": 114,
+   "2023": 143,
+   "2024": 208,
+   "2025": 177,
+   "2026": 175
+  },
+  "sentences_per_decision": {
+   "n": 847,
+   "median": 81.0,
+   "q1": 51.0,
+   "q3": 134.0
+  }
+ }
+}

@@ -1,0 +1,8 @@
+{
+ "dev_penale_positives": 0,
+ "rule": "penale-head firing count on dev",
+ "A0_count": 165,
+ "it3m_count_at_A0_threshold": 4,
+ "threshold": 0.009772,
+ "it3m_count_at_chosen": 167
+}

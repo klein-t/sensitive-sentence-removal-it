@@ -1,0 +1,80 @@
+{
+ "A0_by_head": {
+  "salute": "removed 86/91, twins kept 49/91",
+  "penale": "removed 153/158, twins kept 59/158",
+  "minori": "removed 34/34, twins kept 16/34",
+  "famiglia": "removed 102/105, twins kept 39/105"
+ },
+ "it1_by_head": {
+  "salute": "removed 81/91, twins kept 63/91",
+  "penale": "removed 147/158, twins kept 106/158",
+  "minori": "removed 33/34, twins kept 25/34",
+  "famiglia": "removed 99/105, twins kept 74/105"
+ },
+ "hybrid_famiglia_from_it1": {
+  "thresholds": [
+   0.0384,
+   0.4072,
+   0.0205,
+   0.0724
+  ],
+  "audit100": {
+   "sensitive_removed": "156/158",
+   "harmless_deleted": "1640/37162 = 4.41%",
+   "adjacent_neighbour_removed": "92/239"
+  },
+  "edge_heldout": {
+   "sensitive_removed": "327/343 = 95.3%",
+   "harmless_twin_kept": "177/343 = 51.6%",
+   "neighbour_of_sensitive_removed": "445/811"
+  },
+  "context_probe": {
+   "original": "TP 42/42, FP 50/238",
+   "padded": "TP 41/42, FP 19/238"
+  },
+  "edge_heldout_relabeled": {
+   "sensitive_removed": "328/344 = 95.3%",
+   "harmless_twin_kept": "177/342 = 51.8%",
+   "neighbour_of_sensitive_removed": "444/815"
+  },
+  "by_head": {
+   "salute": "removed 86/91, twins kept 53/91",
+   "penale": "removed 152/158, twins kept 67/158",
+   "minori": "removed 33/34, twins kept 24/34",
+   "famiglia": "removed 99/105, twins kept 62/105"
+  }
+ },
+ "hybrid_famiglia_from_A0_rest_it1": {
+  "thresholds": [
+   0.0384,
+   0.4072,
+   0.0205,
+   0.0724
+  ],
+  "audit100": {
+   "sensitive_removed": "156/158",
+   "harmless_deleted": "1072/37162 = 2.88%",
+   "adjacent_neighbour_removed": "128/239"
+  },
+  "edge_heldout": {
+   "sensitive_removed": "319/343 = 93.0%",
+   "harmless_twin_kept": "193/343 = 56.3%",
+   "neighbour_of_sensitive_removed": "268/811"
+  },
+  "context_probe": {
+   "original": "TP 42/42, FP 36/238",
+   "padded": "TP 41/42, FP 17/238"
+  },
+  "edge_heldout_relabeled": {
+   "sensitive_removed": "320/344 = 93.0%",
+   "harmless_twin_kept": "193/342 = 56.4%",
+   "neighbour_of_sensitive_removed": "271/815"
+  },
+  "by_head": {
+   "salute": "removed 81/91, twins kept 57/91",
+   "penale": "removed 148/158, twins kept 96/158",
+   "minori": "removed 34/34, twins kept 16/34",
+   "famiglia": "removed 101/105, twins kept 46/105"
+  }
+ }
+}

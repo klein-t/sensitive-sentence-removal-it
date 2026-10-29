@@ -1,0 +1,64 @@
+{
+ "pairs_kept": {
+  "fam_to_salute": 68,
+  "fam_to_penale": 66,
+  "fam_to_minori": 62,
+  "negated": 54,
+  "deceased": 24,
+  "company": 15
+ },
+ "pairs_dropped_label_mismatch": {
+  "fam_to_salute": 2,
+  "fam_to_penale": 2,
+  "negated": 17,
+  "company": 18
+ },
+ "pair_source_groups": {
+  "fam_to_salute": 27,
+  "fam_to_penale": 26,
+  "fam_to_minori": 25,
+  "negated": 24,
+  "deceased": 12,
+  "company": 10
+ },
+ "a0": {
+  "fam_to_salute": {
+   "target_removed (edited, new class)": "68/68 = 100.0% [94.7%, 100.0%]",
+   "source_removed (original famiglia)": "68/68 = 100.0% [94.7%, 100.0%]"
+  },
+  "fam_to_penale": {
+   "target_removed (edited, new class)": "64/66 = 97.0% [89.6%, 99.2%]",
+   "source_removed (original famiglia)": "66/66 = 100.0% [94.5%, 100.0%]"
+  },
+  "fam_to_minori": {
+   "target_removed (edited, new class)": "62/62 = 100.0% [94.2%, 100.0%]",
+   "source_removed (original famiglia)": "62/62 = 100.0% [94.2%, 100.0%]"
+  },
+  "negated": {
+   "target_removed (original positive)": "54/54 = 100.0% [93.4%, 100.0%]",
+   "twin_kept (edited harmless)": "0/54 = 0.0% [0.0%, 6.6%]",
+   "pair_correct (removed and kept)": "0/54 = 0.0% [0.0%, 6.6%]"
+  },
+  "deceased": {
+   "target_removed (original positive)": "24/24 = 100.0% [86.2%, 100.0%]",
+   "twin_kept (edited harmless)": "0/24 = 0.0% [0.0%, 13.8%]",
+   "pair_correct (removed and kept)": "0/24 = 0.0% [0.0%, 13.8%]"
+  },
+  "company": {
+   "target_removed (original positive)": "15/15 = 100.0% [79.6%, 100.0%]",
+   "twin_kept (edited harmless)": "10/15 = 66.7% [41.7%, 84.8%]",
+   "pair_correct (removed and kept)": "10/15 = 66.7% [41.7%, 84.8%]"
+  }
+ },
+ "unscored_sides": {},
+ "realism_auc": {
+  "all": 0.915,
+  "company": 1.0,
+  "deceased": 1.0,
+  "fam_to_minori": 1.0,
+  "fam_to_penale": 0.996,
+  "fam_to_salute": 0.986,
+  "negated": 0.949
+ },
+ "sol_tokens": 1885526
+}

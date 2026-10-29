@@ -1,0 +1,52 @@
+{
+ "uncertain_by_origin": {
+  "cue_minori": 1,
+  "non_cue": 5
+ },
+ "salute": {
+  "positives": 0,
+  "groups": 0,
+  "from_non_cue_sample": 0,
+  "max_per_group": 0,
+  "recall_removed": "0/0",
+  "recall_same_head": "0/0"
+ },
+ "penale": {
+  "positives": 0,
+  "groups": 0,
+  "from_non_cue_sample": 0,
+  "max_per_group": 0,
+  "recall_removed": "0/0",
+  "recall_same_head": "0/0"
+ },
+ "minori": {
+  "positives": 3,
+  "groups": 2,
+  "from_non_cue_sample": 0,
+  "max_per_group": 2,
+  "recall_removed": "3/3 = 100.0% [43.9%, 100.0%]",
+  "recall_same_head": "3/3 = 100.0% [43.9%, 100.0%]"
+ },
+ "famiglia": {
+  "positives": 28,
+  "groups": 14,
+  "from_non_cue_sample": 3,
+  "max_per_group": 6,
+  "recall_removed": "28/28 = 100.0% [87.9%, 100.0%]",
+  "recall_same_head": "28/28 = 100.0% [87.9%, 100.0%]"
+ },
+ "harmless_cue_deleted": {
+  "salute": "48/292 = 16.4% [12.6%, 21.1%]",
+  "minori": "109/310 = 35.2% [30.1%, 40.6%]",
+  "penale": "109/271 = 40.2% [34.6%, 46.2%]",
+  "non_cue": "22/292 = 7.5% [5.0%, 11.1%]"
+ },
+ "doc_leak_rare_classes": "0/2",
+ "thresholds": [
+  0.0384,
+  0.40721,
+  0.02048,
+  0.07239
+ ],
+ "sol_tokens": 1251147
+}

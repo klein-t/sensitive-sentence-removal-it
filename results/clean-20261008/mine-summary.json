@@ -1,0 +1,22 @@
+{
+ "frame_sentences": 27229,
+ "cue_hits": {
+  "salute": 292,
+  "penale": 274,
+  "minori": 333
+ },
+ "cue_hit_groups": {
+  "salute": 89,
+  "penale": 61,
+  "minori": 78
+ },
+ "non_cue_sentences": 26339,
+ "units": 1190,
+ "units_by_origin": {
+  "cue_salute": 292,
+  "cue_penale": 272,
+  "cue_minori": 326,
+  "non_cue": 300
+ },
+ "unit_chars_mean": 967
+}

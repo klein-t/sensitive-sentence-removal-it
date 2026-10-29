@@ -1,0 +1,66 @@
+{
+ "pair_sources": 408,
+ "pair_source_groups": 279,
+ "pair_source_heads": {
+  "salute": 13,
+  "famiglia": 339,
+  "minori": 74,
+  "penale": 62
+ },
+ "edit_jobs": {
+  "fam_to_salute": 140,
+  "fam_to_penale": 140,
+  "fam_to_minori": 140,
+  "negated": 280,
+  "deceased": 190,
+  "company": 230,
+  "hypothetical": 180
+ },
+ "max_edits_per_source": 4,
+ "cass": {
+  "decisions_outside_test": 1811,
+  "negation_category_hits": {
+   "famiglia": 585,
+   "minori": 313,
+   "penale": 1369,
+   "salute": 296
+  },
+  "units": 500,
+  "units_by_origin": {
+   "cue_famiglia": 125,
+   "cue_minori": 125,
+   "cue_penale": 125,
+   "cue_salute": 125
+  },
+  "unit_decisions": 374
+ },
+ "dev_documents": 120,
+ "dev_groups": 117,
+ "exclusion_check": {
+  "test_groups": {
+   "audit100_audit15": 99,
+   "ipw_deletion_sample": 196,
+   "held_out_positives": 262,
+   "held_out_neighbours": 116,
+   "clean_frame": 122,
+   "counterfactual_sources": 66
+  },
+  "group_overlap_with_tests": {
+   "v1_replay": 0,
+   "it1_sol_units": 0,
+   "pair_sources": 0,
+   "dev": 0
+  },
+  "dev_overlap_with_training": {
+   "v1_replay": 0,
+   "it1_sol_units": 0,
+   "pair_sources": 0
+  },
+  "non_train_split_groups": {
+   "pair_sources": 0,
+   "dev": 0
+  },
+  "cass_decisions_in_test": 0,
+  "target_12gram_overlap_with_tests": 0
+ }
+}

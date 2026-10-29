@@ -1,0 +1,47 @@
+{
+ "sentences": 19360,
+ "population_per_bin": [
+  4237,
+  12627,
+  690,
+  241,
+  126,
+  164,
+  244
+ ],
+ "units": 640,
+ "units_per_bin": {
+  "0": 40,
+  "1": 40,
+  "2": 80,
+  "3": 100,
+  "4": 120,
+  "5": 120,
+  "6": 140
+ },
+ "sol_tokens": 1963539,
+ "labelled_both": 640,
+ "uncertain": 27,
+ "positive": 14,
+ "pass_agreement": {
+  "units": 640,
+  "remove_any": "639/640 = 99.8%",
+  "remove_any_kappa": 0.965,
+  "remove_exact_heads": "639/640 = 99.8%",
+  "remove_per_head": {
+   "salute": "640/640 = 100.0%",
+   "penale": "640/640 = 100.0%",
+   "minori": "640/640 = 100.0%",
+   "famiglia": "639/640 = 99.8%"
+  },
+  "topics_exact": "640/640 = 100.0%",
+  "subject": "548/640 = 85.6%",
+  "assertion": "634/640 = 99.1%",
+  "removed_by_first": 15,
+  "removed_by_second": 14,
+  "either_uncertain": 26
+ },
+ "positive_heads": {
+  "famiglia": 14
+ }
+}

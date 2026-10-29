@@ -1,0 +1,257 @@
+{
+ "throughput": {
+  "units": 1151,
+  "units_per_second": 0.133,
+  "concurrency": 1,
+  "failed_after_reask": 7,
+  "reasked": 8,
+  "mean_prompt_tokens": 1403,
+  "mean_completion_tokens": 69
+ },
+ "llm_raw": {
+  "units": 1180,
+  "certain": 1151,
+  "uncertain_by_origin": {
+   "cue_salute": 7,
+   "cue_minori": 7,
+   "cue_famiglia": 7,
+   "cue_penale": 7,
+   "non_cue": 1
+  },
+  "salute": {
+   "positives": 67,
+   "decisions": 60,
+   "by_kind": {
+    "snciv": 19,
+    "snpen": 48
+   },
+   "by_stratum": {
+    "civ_successioni": 1,
+    "civ_famiglia": 6,
+    "civ_salute": 12,
+    "pen_salute": 28,
+    "pen_minori": 16,
+    "pen_uniform": 4
+   },
+   "from_non_cue_sample": 0,
+   "max_per_decision": 3,
+   "recall_removed": "24/67 = 35.8% [25.4%, 47.8%]",
+   "recall_same_head": "14/67 = 20.9% [12.9%, 32.1%]",
+   "recall_removed_by_kind": {
+    "snciv": "4/19 = 21.1% [8.5%, 43.3%]",
+    "snpen": "20/48 = 41.7% [28.8%, 55.7%]"
+   }
+  },
+  "penale": {
+   "positives": 235,
+   "decisions": 190,
+   "by_kind": {
+    "snciv": 12,
+    "snpen": 223
+   },
+   "by_stratum": {
+    "civ_salute": 4,
+    "civ_minori": 4,
+    "civ_uniform": 2,
+    "civ_famiglia": 2,
+    "pen_salute": 51,
+    "pen_uniform": 76,
+    "pen_minori": 96
+   },
+   "from_non_cue_sample": 13,
+   "max_per_decision": 3,
+   "recall_removed": "83/235 = 35.3% [29.5%, 41.6%]",
+   "recall_same_head": "70/235 = 29.8% [24.3%, 35.9%]",
+   "recall_removed_by_kind": {
+    "snciv": "4/12 = 33.3% [13.8%, 60.9%]",
+    "snpen": "79/223 = 35.4% [29.4%, 41.9%]"
+   }
+  },
+  "minori": {
+   "positives": 68,
+   "decisions": 58,
+   "by_kind": {
+    "snciv": 20,
+    "snpen": 48
+   },
+   "by_stratum": {
+    "civ_successioni": 1,
+    "civ_minori": 5,
+    "civ_famiglia": 12,
+    "civ_salute": 2,
+    "pen_minori": 45,
+    "pen_salute": 3
+   },
+   "from_non_cue_sample": 0,
+   "max_per_decision": 3,
+   "recall_removed": "28/68 = 41.2% [30.3%, 53.0%]",
+   "recall_same_head": "19/68 = 27.9% [18.7%, 39.6%]",
+   "recall_removed_by_kind": {
+    "snciv": "9/20 = 45.0% [25.8%, 65.8%]",
+    "snpen": "19/48 = 39.6% [27.0%, 53.7%]"
+   }
+  },
+  "famiglia": {
+   "positives": 173,
+   "decisions": 151,
+   "by_kind": {
+    "snciv": 118,
+    "snpen": 55
+   },
+   "by_stratum": {
+    "civ_famiglia": 59,
+    "civ_uniform": 3,
+    "civ_successioni": 42,
+    "civ_minori": 7,
+    "civ_salute": 7,
+    "pen_salute": 8,
+    "pen_uniform": 6,
+    "pen_minori": 41
+   },
+   "from_non_cue_sample": 1,
+   "max_per_decision": 3,
+   "recall_removed": "38/173 = 22.0% [16.4%, 28.7%]",
+   "recall_same_head": "21/173 = 12.1% [8.1%, 17.8%]",
+   "recall_removed_by_kind": {
+    "snciv": "26/118 = 22.0% [15.5%, 30.3%]",
+    "snpen": "12/55 = 21.8% [12.9%, 34.4%]"
+   }
+  },
+  "harmless_deleted": {
+   "any_cue": "150/493 = 30.4% [26.5%, 34.6%]",
+   "famiglia": "55/171 = 32.2% [25.6%, 39.5%]",
+   "minori": "50/145 = 34.5% [27.2%, 42.5%]",
+   "non_cue": "26/285 = 9.1% [6.3%, 13.0%]",
+   "penale": "86/163 = 52.8% [45.1%, 60.3%]",
+   "salute": "50/163 = 30.7% [24.1%, 38.1%]"
+  },
+  "decision_leak": {
+   "all_heads": "225/307 = 73.3% [68.1%, 77.9%]",
+   "salute_penale_minori": "156/224 = 69.6% [63.3%, 75.3%]"
+  }
+ },
+ "llm_composed": {
+  "units": 1180,
+  "certain": 1151,
+  "uncertain_by_origin": {
+   "cue_salute": 7,
+   "cue_minori": 7,
+   "cue_famiglia": 7,
+   "cue_penale": 7,
+   "non_cue": 1
+  },
+  "salute": {
+   "positives": 67,
+   "decisions": 60,
+   "by_kind": {
+    "snciv": 19,
+    "snpen": 48
+   },
+   "by_stratum": {
+    "civ_successioni": 1,
+    "civ_famiglia": 6,
+    "civ_salute": 12,
+    "pen_salute": 28,
+    "pen_minori": 16,
+    "pen_uniform": 4
+   },
+   "from_non_cue_sample": 0,
+   "max_per_decision": 3,
+   "recall_removed": "37/67 = 55.2% [43.4%, 66.5%]",
+   "recall_same_head": "24/67 = 35.8% [25.4%, 47.8%]",
+   "recall_removed_by_kind": {
+    "snciv": "11/19 = 57.9% [36.3%, 76.9%]",
+    "snpen": "26/48 = 54.2% [40.3%, 67.4%]"
+   }
+  },
+  "penale": {
+   "positives": 235,
+   "decisions": 190,
+   "by_kind": {
+    "snciv": 12,
+    "snpen": 223
+   },
+   "by_stratum": {
+    "civ_salute": 4,
+    "civ_minori": 4,
+    "civ_uniform": 2,
+    "civ_famiglia": 2,
+    "pen_salute": 51,
+    "pen_uniform": 76,
+    "pen_minori": 96
+   },
+   "from_non_cue_sample": 13,
+   "max_per_decision": 3,
+   "recall_removed": "131/235 = 55.7% [49.4%, 62.0%]",
+   "recall_same_head": "118/235 = 50.2% [43.9%, 56.6%]",
+   "recall_removed_by_kind": {
+    "snciv": "6/12 = 50.0% [25.4%, 74.6%]",
+    "snpen": "125/223 = 56.1% [49.5%, 62.4%]"
+   }
+  },
+  "minori": {
+   "positives": 68,
+   "decisions": 58,
+   "by_kind": {
+    "snciv": 20,
+    "snpen": 48
+   },
+   "by_stratum": {
+    "civ_successioni": 1,
+    "civ_minori": 5,
+    "civ_famiglia": 12,
+    "civ_salute": 2,
+    "pen_minori": 45,
+    "pen_salute": 3
+   },
+   "from_non_cue_sample": 0,
+   "max_per_decision": 3,
+   "recall_removed": "37/68 = 54.4% [42.7%, 65.7%]",
+   "recall_same_head": "17/68 = 25.0% [16.2%, 36.4%]",
+   "recall_removed_by_kind": {
+    "snciv": "10/20 = 50.0% [29.9%, 70.1%]",
+    "snpen": "27/48 = 56.2% [42.3%, 69.3%]"
+   }
+  },
+  "famiglia": {
+   "positives": 173,
+   "decisions": 151,
+   "by_kind": {
+    "snciv": 118,
+    "snpen": 55
+   },
+   "by_stratum": {
+    "civ_famiglia": 59,
+    "civ_uniform": 3,
+    "civ_successioni": 42,
+    "civ_minori": 7,
+    "civ_salute": 7,
+    "pen_salute": 8,
+    "pen_uniform": 6,
+    "pen_minori": 41
+   },
+   "from_non_cue_sample": 1,
+   "max_per_decision": 3,
+   "recall_removed": "97/173 = 56.1% [48.6%, 63.3%]",
+   "recall_same_head": "61/173 = 35.3% [28.5%, 42.6%]",
+   "recall_removed_by_kind": {
+    "snciv": "57/118 = 48.3% [39.5%, 57.2%]",
+    "snpen": "40/55 = 72.7% [59.8%, 82.7%]"
+   }
+  },
+  "harmless_deleted": {
+   "any_cue": "7/493 = 1.4% [0.7%, 2.9%]",
+   "famiglia": "3/171 = 1.8% [0.6%, 5.0%]",
+   "minori": "1/145 = 0.7% [0.1%, 3.8%]",
+   "non_cue": "8/285 = 2.8% [1.4%, 5.4%]",
+   "penale": "3/163 = 1.8% [0.6%, 5.3%]",
+   "salute": "2/163 = 1.2% [0.3%, 4.4%]"
+  },
+  "decision_leak": {
+   "all_heads": "158/307 = 51.5% [45.9%, 57.0%]",
+   "salute_penale_minori": "110/224 = 49.1% [42.6%, 55.6%]"
+  }
+ },
+ "model": "lmstudio-community/gemma-4-12b-it-MLX-4bit",
+ "runtime": "LM Studio MLX 4-bit"
+}

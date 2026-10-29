@@ -1,0 +1,79 @@
+{
+ "pairs": {
+  "fam_to_salute": 68,
+  "fam_to_penale": 66,
+  "fam_to_minori": 62,
+  "negated": 54,
+  "deceased": 24,
+  "company": 15
+ },
+ "llm_raw": {
+  "fam_to_salute": {
+   "target_removed (edited, new class)": "1/68 = 1.5% [0.3%, 7.9%]",
+   "source_removed (original famiglia)": "0/68 = 0.0% [0.0%, 5.3%]"
+  },
+  "fam_to_penale": {
+   "target_removed (edited, new class)": "0/66 = 0.0% [0.0%, 5.5%]",
+   "source_removed (original famiglia)": "0/66 = 0.0% [0.0%, 5.5%]"
+  },
+  "fam_to_minori": {
+   "target_removed (edited, new class)": "0/62 = 0.0% [0.0%, 5.8%]",
+   "source_removed (original famiglia)": "0/62 = 0.0% [0.0%, 5.8%]"
+  },
+  "negated": {
+   "target_removed (original positive)": "0/54 = 0.0% [0.0%, 6.6%]",
+   "twin_kept (edited harmless)": "46/54 = 85.2% [73.4%, 92.3%]",
+   "pair_correct (removed and kept)": "0/54 = 0.0% [0.0%, 6.6%]"
+  },
+  "deceased": {
+   "target_removed (original positive)": "0/24 = 0.0% [0.0%, 13.8%]",
+   "twin_kept (edited harmless)": "16/24 = 66.7% [46.7%, 82.0%]",
+   "pair_correct (removed and kept)": "0/24 = 0.0% [0.0%, 13.8%]"
+  },
+  "company": {
+   "target_removed (original positive)": "0/15 = 0.0% [0.0%, 20.4%]",
+   "twin_kept (edited harmless)": "15/15 = 100.0% [79.6%, 100.0%]",
+   "pair_correct (removed and kept)": "0/15 = 0.0% [0.0%, 20.4%]"
+  }
+ },
+ "llm_composed": {
+  "fam_to_salute": {
+   "target_removed (edited, new class)": "67/68 = 98.5% [92.1%, 99.7%]",
+   "source_removed (original famiglia)": "41/68 = 60.3% [48.4%, 71.1%]"
+  },
+  "fam_to_penale": {
+   "target_removed (edited, new class)": "56/66 = 84.8% [74.3%, 91.6%]",
+   "source_removed (original famiglia)": "36/66 = 54.5% [42.6%, 66.0%]"
+  },
+  "fam_to_minori": {
+   "target_removed (edited, new class)": "62/62 = 100.0% [94.2%, 100.0%]",
+   "source_removed (original famiglia)": "38/62 = 61.3% [48.8%, 72.4%]"
+  },
+  "negated": {
+   "target_removed (original positive)": "31/54 = 57.4% [44.2%, 69.7%]",
+   "twin_kept (edited harmless)": "37/54 = 68.5% [55.3%, 79.3%]",
+   "pair_correct (removed and kept)": "14/54 = 25.9% [16.1%, 38.9%]"
+  },
+  "deceased": {
+   "target_removed (original positive)": "19/24 = 79.2% [59.5%, 90.8%]",
+   "twin_kept (edited harmless)": "16/24 = 66.7% [46.7%, 82.0%]",
+   "pair_correct (removed and kept)": "11/24 = 45.8% [27.9%, 64.9%]"
+  },
+  "company": {
+   "target_removed (original positive)": "9/15 = 60.0% [35.7%, 80.2%]",
+   "twin_kept (edited harmless)": "14/15 = 93.3% [70.2%, 98.8%]",
+   "pair_correct (removed and kept)": "8/15 = 53.3% [30.1%, 75.2%]"
+  }
+ },
+ "throughput": {
+  "units": 369,
+  "units_per_second": 0.086,
+  "concurrency": 1,
+  "failed_after_reask": 0,
+  "reasked": 0,
+  "mean_prompt_tokens": 1244,
+  "mean_completion_tokens": 66
+ },
+ "model": "lmstudio-community/gemma-4-12b-it-MLX-4bit",
+ "runtime": "LM Studio MLX 4-bit"
+}

@@ -1,0 +1,50 @@
+{
+ "salute": {
+  "selection": "inherited_fixed_threshold",
+  "recall": 0.8333333333333334,
+  "recall_ci_lower": 0.68,
+  "standalone_removal_rate": 0.004449388209121246,
+  "standalone_removal_rate_per_seed": [
+   0.004449388209121246,
+   0.004449388209121246,
+   0.004449388209121246
+  ],
+  "maximum_standalone_removal_rate": 0.05
+ },
+ "penale": {
+  "selection": "validation_lowest_compliant_out_of_fold",
+  "recall": 0.9245283018867925,
+  "recall_ci_lower": 0.8461538461538461,
+  "standalone_removal_rate": 0.05079718205413423,
+  "standalone_removal_rate_per_seed": [
+   0.05116796440489433,
+   0.05228031145717464,
+   0.048943270300333706
+  ],
+  "maximum_standalone_removal_rate": 0.05
+ },
+ "minori": {
+  "selection": "inherited_fixed_threshold",
+  "recall": 0.9863945578231292,
+  "recall_ci_lower": 0.9647824892618121,
+  "standalone_removal_rate": 0.006674082313681869,
+  "standalone_removal_rate_per_seed": [
+   0.006674082313681869,
+   0.006674082313681869,
+   0.006674082313681869
+  ],
+  "maximum_standalone_removal_rate": 0.05
+ },
+ "famiglia": {
+  "selection": "inherited_fixed_threshold",
+  "recall": 0.959866220735786,
+  "recall_ci_lower": 0.9379304710389903,
+  "standalone_removal_rate": 0.031145717463848716,
+  "standalone_removal_rate_per_seed": [
+   0.03114571746384872,
+   0.03114571746384872,
+   0.03114571746384872
+  ],
+  "maximum_standalone_removal_rate": 0.05
+ }
+}

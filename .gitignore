@@ -1,0 +1,26 @@
+# Private data, models and caches: never commit
+data/
+models/
+*.jsonl
+*.safetensors
+*.bin
+*.pt
+*.ckpt
+*.onnx
+spm.model
+cache/
+.cache/
+__pycache__/
+*.pyc
+.venv/
+.ruff_cache/
+.env
+.env.*
+.DS_Store
+# LaTeX build files
+report/*.aux
+report/*.log
+report/*.out
+report/*.bbl
+report/*.blg
+report/*.synctex.gz
