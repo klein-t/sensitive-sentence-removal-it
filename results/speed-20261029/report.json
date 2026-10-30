@@ -1,0 +1,192 @@
+{
+ "what": "end-to-end inference time per document, sentence splitting included",
+ "documents": {
+  "n": 20,
+  "split": "test",
+  "selection": "sentence-count quantiles 2.5%..97.5% in 5% steps",
+  "sentences_total": 4956,
+  "sentences_median": 183.0,
+  "sentences_min": 36,
+  "sentences_max": 941
+ },
+ "protocol": "models preloaded, 1 warm-up pass, 3 recorded passes, median; each method starts only when no foreign process >= 50% CPU and load1 < 6.0",
+ "hardware": "Apple M4 Max, 36 GB",
+ "os": "macOS-26.4-arm64-arm-64bit",
+ "versions": {
+  "torch": "2.14.0",
+  "transformers": "4.57.6",
+  "gliner": "0.2.29",
+  "presidio-analyzer": "2.2.362",
+  "spacy": "3.8.18",
+  "it_core_news_lg": "3.8.0"
+ },
+ "methods": {
+  "it3m_c": {
+   "config": {
+    "model": "it3m_c (mDeBERTa-v3-base, 4 sigmoid heads + unused 5th)",
+    "device": "mps",
+    "dtype": "float32",
+    "batch_size": "8",
+    "input": "target sentence window + 200 chars context each side, max 384 tokens"
+   },
+   "load_s": 4.7,
+   "load_conditions": {
+    "before": {
+     "load1": 2.68,
+     "busy_processes": [],
+     "waited_s": 2,
+     "quiet": true
+    },
+    "after": {
+     "load1": 3.26,
+     "busy_processes": []
+    }
+   },
+   "median_of_passes": {
+    "total_s": 108.898,
+    "sentences_per_s": 45.51,
+    "s_per_doc_median": 4.126,
+    "s_per_doc_p90": 8.628
+   },
+   "passes": [
+    {
+     "total_s": 101.229,
+     "sentences_per_s": 48.96,
+     "s_per_doc_median": 3.958,
+     "s_per_doc_p90": 7.911
+    },
+    {
+     "total_s": 108.898,
+     "sentences_per_s": 45.51,
+     "s_per_doc_median": 4.126,
+     "s_per_doc_p90": 8.628
+    },
+    {
+     "total_s": 112.151,
+     "sentences_per_s": 44.19,
+     "s_per_doc_median": 4.417,
+     "s_per_doc_p90": 8.782
+    }
+   ],
+   "slowdown_vs_it3m_c": 1.0
+  },
+  "presidio_any": {
+   "config": {
+    "model": "presidio-analyzer + spaCy it_core_news_lg, predefined Italian registry",
+    "recognizers": "CreditCardRecognizer,CryptoRecognizer,DateRecognizer,EmailRecognizer,IbanRecognizer,IpRecognizer,ItDriverLicenseRecognizer,ItFiscalCodeRecognizer,ItIdentityCardRecognizer,ItPassportRecognizer,ItVatCodeRecognizer,MacAddressRecognizer,MedicalLicenseRecognizer,PhoneRecognizer,SpacyRecognizer,UrlRecognizer",
+    "device": "cpu",
+    "rule": "remove sentence if any entity score >= 0.5",
+    "input": "sentence alone"
+   },
+   "load_s": 12.2,
+   "load_conditions": {
+    "before": {
+     "load1": 3.48,
+     "busy_processes": [],
+     "waited_s": 3,
+     "quiet": true
+    },
+    "after": {
+     "load1": 3.74,
+     "busy_processes": []
+    }
+   },
+   "median_of_passes": {
+    "total_s": 16.753,
+    "sentences_per_s": 295.83,
+    "s_per_doc_median": 0.706,
+    "s_per_doc_p90": 1.667
+   },
+   "passes": [
+    {
+     "total_s": 16.522,
+     "sentences_per_s": 299.97,
+     "s_per_doc_median": 0.706,
+     "s_per_doc_p90": 1.645
+    },
+    {
+     "total_s": 16.971,
+     "sentences_per_s": 292.03,
+     "s_per_doc_median": 0.725,
+     "s_per_doc_p90": 1.676
+    },
+    {
+     "total_s": 16.753,
+     "sentences_per_s": 295.83,
+     "s_per_doc_median": 0.687,
+     "s_per_doc_p90": 1.667
+    }
+   ],
+   "slowdown_vs_it3m_c": 0.15
+  },
+  "gliner_pii@0.3": {
+   "config": {
+    "model": "urchade/gliner_multi_pii-v1",
+    "device": "mps",
+    "threshold": "0.3",
+    "batch_size": "16",
+    "chunk_words": "200",
+    "decoding": "flat_ner=False, multi_label=True",
+    "input": "sentence alone"
+   },
+   "load_s": 6.2,
+   "load_conditions": {
+    "before": {
+     "load1": 3.84,
+     "busy_processes": [],
+     "waited_s": 3,
+     "quiet": true
+    },
+    "after": {
+     "load1": 1.45,
+     "busy_processes": []
+    }
+   },
+   "median_of_passes": {
+    "total_s": 116.201,
+    "sentences_per_s": 42.65,
+    "s_per_doc_median": 4.963,
+    "s_per_doc_p90": 8.644
+   },
+   "passes": [
+    {
+     "total_s": 111.828,
+     "sentences_per_s": 44.32,
+     "s_per_doc_median": 4.658,
+     "s_per_doc_p90": 8.644
+    },
+    {
+     "total_s": 119.692,
+     "sentences_per_s": 41.41,
+     "s_per_doc_median": 4.976,
+     "s_per_doc_p90": 8.884
+    },
+    {
+     "total_s": 116.201,
+     "sentences_per_s": 42.65,
+     "s_per_doc_median": 4.963,
+     "s_per_doc_p90": 8.41
+    }
+   ],
+   "slowdown_vs_it3m_c": 1.07
+  }
+ },
+ "gemma_12b_reference": {
+  "source": "results/llm-baseline-20261009/report-*.json throughput blocks (not re-measured)",
+  "model": "Gemma 4 12B instruct, MLX 4-bit, LM Studio, concurrency 1",
+  "input": "frozen Phase 0 prompt + one unit (target + up to 2 sentences context each side)",
+  "units_per_second_by_instrument": {
+   "final_positive": 0.137,
+   "final_deletion": 0.143,
+   "clean": 0.244,
+   "counterfactuals": 0.086,
+   "sentenze": 0.133,
+   "cascade": 0.304
+  },
+  "caveat": "measured on the M4 Max while it3 training shared the GPU",
+  "slowdown_vs_it3m_c_range": [
+   150,
+   529
+  ]
+ }
+}
