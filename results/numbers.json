@@ -1370,6 +1370,351 @@
   "changed": false
  },
  {
+  "id": "gliner_pii_cal.sanity_t0.3_identical",
+  "value": true,
+  "source": "results/gliner-calibrated-20261101/report.json",
+  "path": "sanity_en_t0.3/report_identical_to_stored",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.gliner_calibrated collect; score (gliner venv); report",
+  "status": "GLiNER-PII calibrated (validation, A0 targets, 5% budget); fresh MPS scores 2026-11-01",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "gliner_pii_cal.label_set",
+  "value": "en",
+  "source": "results/gliner-calibrated-20261101/report.json",
+  "path": "label_choice/chosen",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.gliner_calibrated collect; score (gliner venv); report",
+  "status": "GLiNER-PII calibrated (validation, A0 targets, 5% budget); fresh MPS scores 2026-11-01",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "gliner_pii_cal.val_recalled_en",
+  "value": "305/541",
+  "source": "results/gliner-calibrated-20261101/report.json",
+  "path": "label_choice/en",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.gliner_calibrated collect; score (gliner venv); report",
+  "status": "GLiNER-PII calibrated (validation, A0 targets, 5% budget); fresh MPS scores 2026-11-01",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "gliner_pii_cal.val_recalled_it",
+  "value": "221/541",
+  "source": "results/gliner-calibrated-20261101/report.json",
+  "path": "label_choice/it",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.gliner_calibrated collect; score (gliner venv); report",
+  "status": "GLiNER-PII calibrated (validation, A0 targets, 5% budget); fresh MPS scores 2026-11-01",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "gliner_pii_cal.thresholds",
+  "value": [
+   0.11606443673372269,
+   0.4136389493942261,
+   0.09695236384868622,
+   0.2707218825817108
+  ],
+  "source": "results/gliner-calibrated-20261101/report.json",
+  "path": "calibrated/thresholds",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.gliner_calibrated collect; score (gliner venv); report",
+  "status": "GLiNER-PII calibrated (validation, A0 targets, 5% budget); fresh MPS scores 2026-11-01",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "gliner_pii_cal.val_salute",
+  "value": {
+   "threshold": 0.11606443673372269,
+   "recall": "12/42",
+   "negatives_fired": "38/899",
+   "precision": 0.2182
+  },
+  "source": "results/gliner-calibrated-20261101/report.json",
+  "path": "validation/en/salute/chosen",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.gliner_calibrated collect; score (gliner venv); report",
+  "status": "GLiNER-PII calibrated (validation, A0 targets, 5% budget); fresh MPS scores 2026-11-01",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "gliner_pii_cal.val_salute_feasible",
+  "value": false,
+  "source": "results/gliner-calibrated-20261101/report.json",
+  "path": "validation/en/salute/feasible",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.gliner_calibrated collect; score (gliner venv); report",
+  "status": "GLiNER-PII calibrated (validation, A0 targets, 5% budget); fresh MPS scores 2026-11-01",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "gliner_pii_cal.val_penale",
+  "value": {
+   "threshold": 0.4136389493942261,
+   "recall": "28/53",
+   "negatives_fired": "42/899",
+   "precision": 0.2772
+  },
+  "source": "results/gliner-calibrated-20261101/report.json",
+  "path": "validation/en/penale/chosen",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.gliner_calibrated collect; score (gliner venv); report",
+  "status": "GLiNER-PII calibrated (validation, A0 targets, 5% budget); fresh MPS scores 2026-11-01",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "gliner_pii_cal.val_penale_feasible",
+  "value": false,
+  "source": "results/gliner-calibrated-20261101/report.json",
+  "path": "validation/en/penale/feasible",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.gliner_calibrated collect; score (gliner venv); report",
+  "status": "GLiNER-PII calibrated (validation, A0 targets, 5% budget); fresh MPS scores 2026-11-01",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "gliner_pii_cal.val_minori",
+  "value": {
+   "threshold": 0.09695236384868622,
+   "recall": "144/147",
+   "negatives_fired": "21/899",
+   "precision": 0.7539
+  },
+  "source": "results/gliner-calibrated-20261101/report.json",
+  "path": "validation/en/minori/chosen",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.gliner_calibrated collect; score (gliner venv); report",
+  "status": "GLiNER-PII calibrated (validation, A0 targets, 5% budget); fresh MPS scores 2026-11-01",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "gliner_pii_cal.val_minori_feasible",
+  "value": false,
+  "source": "results/gliner-calibrated-20261101/report.json",
+  "path": "validation/en/minori/feasible",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.gliner_calibrated collect; score (gliner venv); report",
+  "status": "GLiNER-PII calibrated (validation, A0 targets, 5% budget); fresh MPS scores 2026-11-01",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "gliner_pii_cal.val_famiglia",
+  "value": {
+   "threshold": 0.2707218825817108,
+   "recall": "121/299",
+   "negatives_fired": "42/899",
+   "precision": 0.7246
+  },
+  "source": "results/gliner-calibrated-20261101/report.json",
+  "path": "validation/en/famiglia/chosen",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.gliner_calibrated collect; score (gliner venv); report",
+  "status": "GLiNER-PII calibrated (validation, A0 targets, 5% budget); fresh MPS scores 2026-11-01",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "gliner_pii_cal.val_famiglia_feasible",
+  "value": false,
+  "source": "results/gliner-calibrated-20261101/report.json",
+  "path": "validation/en/famiglia/feasible",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.gliner_calibrated collect; score (gliner venv); report",
+  "status": "GLiNER-PII calibrated (validation, A0 targets, 5% budget); fresh MPS scores 2026-11-01",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "gliner_pii_cal.val_or_negatives_fired",
+  "value": "120/899",
+  "source": "results/gliner-calibrated-20261101/report.json",
+  "path": "validation/en/or_negatives_fired_at_chosen",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.gliner_calibrated collect; score (gliner venv); report",
+  "status": "GLiNER-PII calibrated (validation, A0 targets, 5% budget); fresh MPS scores 2026-11-01",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "gliner_pii_cal.heldout_recall",
+  "value": "193/372 = 51.9% [46.7%, 57.1%]",
+  "source": "results/gliner-calibrated-20261101/report.json",
+  "path": "calibrated/final/held_out_recall",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.gliner_calibrated collect; score (gliner venv); report",
+  "status": "GLiNER-PII calibrated (validation, A0 targets, 5% budget); fresh MPS scores 2026-11-01",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "gliner_pii_cal.heldout_recall_cue_mined",
+  "value": "58/115 = 50.4% [41.0%, 59.9%]",
+  "source": "results/gliner-calibrated-20261101/report.json",
+  "path": "calibrated/final/held_out_recall_cue_mined_only",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.gliner_calibrated collect; score (gliner venv); report",
+  "status": "GLiNER-PII calibrated (validation, A0 targets, 5% budget); fresh MPS scores 2026-11-01",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "gliner_pii_cal.heldout_doc_leak",
+  "value": "83/116",
+  "source": "results/gliner-calibrated-20261101/report.json",
+  "path": "calibrated/final/held_out_doc_leak",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.gliner_calibrated collect; score (gliner venv); report",
+  "status": "GLiNER-PII calibrated (validation, A0 targets, 5% budget); fresh MPS scores 2026-11-01",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "gliner_pii_cal.ipw",
+  "value": "11.49% [9.37%, 14.03%]",
+  "source": "results/gliner-calibrated-20261101/report.json",
+  "path": "calibrated/final/ipw_harmless_deleted",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.gliner_calibrated collect; score (gliner venv); report",
+  "status": "GLiNER-PII calibrated (validation, A0 targets, 5% budget); fresh MPS scores 2026-11-01",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "gliner_pii_cal.audit_recall",
+  "value": "68/158",
+  "source": "results/gliner-calibrated-20261101/report.json",
+  "path": "calibrated/audit100/sensitive_removed",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.gliner_calibrated collect; score (gliner venv); report",
+  "status": "GLiNER-PII calibrated (validation, A0 targets, 5% budget); fresh MPS scores 2026-11-01",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "gliner_pii_cal.cass_decision_leak",
+  "value": "141/307 = 45.9% [40.4%, 51.5%]",
+  "source": "results/gliner-calibrated-20261101/report.json",
+  "path": "calibrated/sentenze/decision_leak/all_heads",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.gliner_calibrated collect; score (gliner venv); report",
+  "status": "GLiNER-PII calibrated (validation, A0 targets, 5% budget); fresh MPS scores 2026-11-01",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "gliner_pii_cal.cf_negated_twin_kept",
+  "value": "32/54 = 59.3% [46.0%, 71.3%]",
+  "source": "results/gliner-calibrated-20261101/report.json",
+  "path": "calibrated/cf/negated/twin_kept",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.gliner_calibrated collect; score (gliner venv); report",
+  "status": "GLiNER-PII calibrated (validation, A0 targets, 5% budget); fresh MPS scores 2026-11-01",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "gliner_pii_cal.cf_negated_original_removed",
+  "value": "22/54 = 40.7% [28.7%, 54.0%]",
+  "source": "results/gliner-calibrated-20261101/report.json",
+  "path": "calibrated/cf/negated/target_removed",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.gliner_calibrated collect; score (gliner venv); report",
+  "status": "GLiNER-PII calibrated (validation, A0 targets, 5% budget); fresh MPS scores 2026-11-01",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "gliner_pii_cal.curve_0.05.heldout_recall",
+  "value": "356/372 = 95.7% [93.1%, 97.5%]",
+  "source": "results/gliner-calibrated-20261101/report.json",
+  "path": "global_curve/0.05/held_out_recall",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.gliner_calibrated collect; score (gliner venv); report",
+  "status": "GLiNER-PII calibrated (validation, A0 targets, 5% budget); fresh MPS scores 2026-11-01",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "gliner_pii_cal.curve_0.05.ipw",
+  "value": "71.63% [68.00%, 75.06%]",
+  "source": "results/gliner-calibrated-20261101/report.json",
+  "path": "global_curve/0.05/ipw_harmless_deleted",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.gliner_calibrated collect; score (gliner venv); report",
+  "status": "GLiNER-PII calibrated (validation, A0 targets, 5% budget); fresh MPS scores 2026-11-01",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "gliner_pii_cal.curve_0.1.heldout_recall",
+  "value": "321/372 = 86.3% [82.4%, 89.6%]",
+  "source": "results/gliner-calibrated-20261101/report.json",
+  "path": "global_curve/0.1/held_out_recall",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.gliner_calibrated collect; score (gliner venv); report",
+  "status": "GLiNER-PII calibrated (validation, A0 targets, 5% budget); fresh MPS scores 2026-11-01",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "gliner_pii_cal.curve_0.1.ipw",
+  "value": "43.58% [39.43%, 47.26%]",
+  "source": "results/gliner-calibrated-20261101/report.json",
+  "path": "global_curve/0.1/ipw_harmless_deleted",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.gliner_calibrated collect; score (gliner venv); report",
+  "status": "GLiNER-PII calibrated (validation, A0 targets, 5% budget); fresh MPS scores 2026-11-01",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "gliner_pii_cal.curve_0.2.heldout_recall",
+  "value": "238/372 = 64.0% [58.9%, 68.9%]",
+  "source": "results/gliner-calibrated-20261101/report.json",
+  "path": "global_curve/0.2/held_out_recall",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.gliner_calibrated collect; score (gliner venv); report",
+  "status": "GLiNER-PII calibrated (validation, A0 targets, 5% budget); fresh MPS scores 2026-11-01",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "gliner_pii_cal.curve_0.2.ipw",
+  "value": "13.61% [11.20%, 15.99%]",
+  "source": "results/gliner-calibrated-20261101/report.json",
+  "path": "global_curve/0.2/ipw_harmless_deleted",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.gliner_calibrated collect; score (gliner venv); report",
+  "status": "GLiNER-PII calibrated (validation, A0 targets, 5% budget); fresh MPS scores 2026-11-01",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "gliner_pii_cal.curve_0.3.heldout_recall",
+  "value": "150/372 = 40.3% [35.3%, 45.5%]",
+  "source": "results/gliner-calibrated-20261101/report.json",
+  "path": "global_curve/0.3/held_out_recall",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.gliner_calibrated collect; score (gliner venv); report",
+  "status": "GLiNER-PII calibrated (validation, A0 targets, 5% budget); fresh MPS scores 2026-11-01",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "gliner_pii_cal.curve_0.3.ipw",
+  "value": "7.42% [5.58%, 9.30%]",
+  "source": "results/gliner-calibrated-20261101/report.json",
+  "path": "global_curve/0.3/ipw_harmless_deleted",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.gliner_calibrated collect; score (gliner venv); report",
+  "status": "GLiNER-PII calibrated (validation, A0 targets, 5% budget); fresh MPS scores 2026-11-01",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "gliner_pii_cal.curve_0.5.heldout_recall",
+  "value": "84/372 = 22.6% [18.4%, 27.2%]",
+  "source": "results/gliner-calibrated-20261101/report.json",
+  "path": "global_curve/0.5/held_out_recall",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.gliner_calibrated collect; score (gliner venv); report",
+  "status": "GLiNER-PII calibrated (validation, A0 targets, 5% budget); fresh MPS scores 2026-11-01",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "gliner_pii_cal.curve_0.5.ipw",
+  "value": "2.52% [1.64%, 3.56%]",
+  "source": "results/gliner-calibrated-20261101/report.json",
+  "path": "global_curve/0.5/ipw_harmless_deleted",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.gliner_calibrated collect; score (gliner venv); report",
+  "status": "GLiNER-PII calibrated (validation, A0 targets, 5% budget); fresh MPS scores 2026-11-01",
+  "headline_before": null,
+  "changed": false
+ },
+ {
   "id": "presidio_any.ipw",
   "value": "52.87% [48.66%, 56.73%]",
   "source": "results/baselines-ner-20261009/report.json",
@@ -1847,6 +2192,2808 @@
   "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.baselines_ner report",
   "status": "stored predictions; sentence keys and report re-derived 2026-10-30",
   "headline_before": "80.1%",
+  "changed": false
+ },
+ {
+  "id": "Held-out/A0/recall (/372)",
+  "value": "371 (99.7%)",
+  "raw": [
+   "371/372 = 99.7% [98.5%, 100.0%]"
+  ],
+  "where": "Table 3",
+  "source": "results/canonical-20261029/eval-canonical.json",
+  "path": "A0@saved/instrument/held_out_recall",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "IPW sample/A0/harmless deletion",
+  "value": "7.25%",
+  "raw": [
+   "7.25% [6.56%, 8.05%]"
+  ],
+  "where": "Table 3",
+  "source": "results/canonical-20261029/eval-canonical.json",
+  "path": "A0@saved/instrument/ipw_harmless_deleted",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "audit100/A0/recall (/158)",
+  "value": "157 (99.4%)",
+  "raw": [
+   "157/158"
+  ],
+  "where": "Table 3",
+  "source": "results/canonical-20261029/eval-canonical.json",
+  "path": "A0@saved/audit100/sensitive_removed",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Held-out/A0/doc leak (/116)",
+  "value": "1 (0.9%)",
+  "raw": [
+   "1/116"
+  ],
+  "where": "Table 3",
+  "source": "results/canonical-20261029/eval-canonical.json",
+  "path": "A0@saved/instrument/held_out_doc_leak",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Cassazione/A0/decision leak (/307)",
+  "value": "13 (4.2%)",
+  "raw": [
+   "13/307 = 4.2% [2.5%, 7.1%]"
+  ],
+  "where": "Table 3",
+  "source": "results/canonical-20261029/eval-canonical.json",
+  "path": "A0@saved/sentenze/decision_leak/all_heads",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Twins/A0/negated kept (/54)",
+  "value": "0 (0.0%)",
+  "raw": [
+   "0/54 = 0.0% [0.0%, 6.6%]"
+  ],
+  "where": "Table 3",
+  "source": "results/canonical-20261029/eval-canonical.json",
+  "path": "A0@saved/counterfactuals/negated/twin_kept (edited harmless)",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Held-out/it1/recall (/372)",
+  "value": "359 (96.5%)",
+  "raw": [
+   "359/372 = 96.5% [94.1%, 98.1%]"
+  ],
+  "where": "Table 3",
+  "source": "results/final-20261003/eval-final.json",
+  "path": "it1/instrument/held_out_recall",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.final_eval",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "IPW sample/it1/harmless deletion",
+  "value": "2.29%",
+  "raw": [
+   "2.29% [1.98%, 2.69%]"
+  ],
+  "where": "Table 3",
+  "source": "results/final-20261003/eval-final.json",
+  "path": "it1/instrument/ipw_harmless_deleted",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.final_eval",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "audit100/it1/recall (/158)",
+  "value": "156 (98.7%)",
+  "raw": [
+   "156/158"
+  ],
+  "where": "Table 3",
+  "source": "results/final-20261003/eval-final.json",
+  "path": "it1/audit100/sensitive_removed",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.final_eval",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Held-out/it1/doc leak (/116)",
+  "value": "4 (3.4%)",
+  "raw": [
+   "4/116"
+  ],
+  "where": "Table 3",
+  "source": "results/final-20261003/eval-final.json",
+  "path": "it1/instrument/held_out_doc_leak",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.final_eval",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Cassazione/it1/decision leak (/307)",
+  "value": "69 (22.5%)",
+  "raw": [
+   "69/307 = 22.5% [18.2%, 27.5%]"
+  ],
+  "where": "Table 3",
+  "source": "results/it3-20261009/eval-it3.json",
+  "path": "it1@final_global/sentenze/decision_leak/all_heads",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.it3_eval final",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Twins/it1/negated kept (/54)",
+  "value": "0 (0.0%)",
+  "raw": [
+   "0/54 = 0.0% [0.0%, 6.6%]"
+  ],
+  "where": "Table 3",
+  "source": "results/it3-20261009/eval-it3.json",
+  "path": "it1@final_global/counterfactuals/negated/twin_kept (edited harmless)",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.it3_eval final",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Held-out/it3/recall (/372)",
+  "value": "371 (99.7%)",
+  "raw": [
+   "371/372 = 99.7% [98.5%, 100.0%]"
+  ],
+  "where": "Table 3",
+  "source": "results/it3-20261009/eval-it3.json",
+  "path": "it3@A0_fixed/instrument/held_out_recall",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.it3_eval final",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "IPW sample/it3/harmless deletion",
+  "value": "1.72%",
+  "raw": [
+   "1.72% [1.42%, 2.04%]"
+  ],
+  "where": "Table 3",
+  "source": "results/it3-20261009/eval-it3.json",
+  "path": "it3@A0_fixed/instrument/ipw_harmless_deleted",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.it3_eval final",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "audit100/it3/recall (/158)",
+  "value": "155 (98.1%)",
+  "raw": [
+   "155/158"
+  ],
+  "where": "Table 3",
+  "source": "results/it3-20261009/eval-it3.json",
+  "path": "it3@A0_fixed/audit100/sensitive_removed",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.it3_eval final",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Held-out/it3/doc leak (/116)",
+  "value": "1 (0.9%)",
+  "raw": [
+   "1/116"
+  ],
+  "where": "Table 3",
+  "source": "results/it3-20261009/eval-it3.json",
+  "path": "it3@A0_fixed/instrument/held_out_doc_leak",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.it3_eval final",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Cassazione/it3/decision leak (/307)",
+  "value": "22 (7.2%)",
+  "raw": [
+   "22/307 = 7.2% [4.8%, 10.6%]"
+  ],
+  "where": "Table 3",
+  "source": "results/it3-20261009/eval-it3.json",
+  "path": "it3@A0_fixed/sentenze/decision_leak/all_heads",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.it3_eval final",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Twins/it3/negated kept (/54)",
+  "value": "3 (5.6%)",
+  "raw": [
+   "3/54 = 5.6% [1.9%, 15.1%]"
+  ],
+  "where": "Table 3",
+  "source": "results/it3-20261009/eval-it3.json",
+  "path": "it3@A0_fixed/counterfactuals/negated/twin_kept (edited harmless)",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.it3_eval final",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Held-out/it3m/recall (/372)",
+  "value": "369 (99.2%)",
+  "raw": [
+   "369/372 = 99.2% [97.7%, 99.8%]"
+  ],
+  "where": "Table 3",
+  "source": "results/it3-20261009/eval-hybrid.json",
+  "path": "it3m@A0_fixed/instrument/held_out_recall",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.hybrid_eval",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "IPW sample/it3m/harmless deletion",
+  "value": "2.37%",
+  "raw": [
+   "2.37% [2.03%, 2.78%]"
+  ],
+  "where": "Table 3",
+  "source": "results/it3-20261009/eval-hybrid.json",
+  "path": "it3m@A0_fixed/instrument/ipw_harmless_deleted",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.hybrid_eval",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "audit100/it3m/recall (/158)",
+  "value": "156 (98.7%)",
+  "raw": [
+   "156/158"
+  ],
+  "where": "Table 3",
+  "source": "results/it3-20261009/eval-hybrid.json",
+  "path": "it3m@A0_fixed/audit100/sensitive_removed",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.hybrid_eval",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Held-out/it3m/doc leak (/116)",
+  "value": "3 (2.6%)",
+  "raw": [
+   "3/116"
+  ],
+  "where": "Table 3",
+  "source": "results/it3-20261009/eval-hybrid.json",
+  "path": "it3m@A0_fixed/instrument/held_out_doc_leak",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.hybrid_eval",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Cassazione/it3m/decision leak (/307)",
+  "value": "24 (7.8%)",
+  "raw": [
+   "24/307 = 7.8% [5.3%, 11.4%]"
+  ],
+  "where": "Table 3",
+  "source": "results/it3-20261009/eval-hybrid.json",
+  "path": "it3m@A0_fixed/sentenze/decision_leak/all_heads",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.hybrid_eval",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Twins/it3m/negated kept (/54)",
+  "value": "39 (72.2%)",
+  "raw": [
+   "39/54 = 72.2% [59.1%, 82.4%]"
+  ],
+  "where": "Table 3",
+  "source": "results/it3-20261009/eval-hybrid.json",
+  "path": "it3m@A0_fixed/counterfactuals/negated/twin_kept (edited harmless)",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.hybrid_eval",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Held-out/it3m_c/recall (/372)",
+  "value": "371 (99.7%)",
+  "raw": [
+   "371/372 = 99.7% [98.5%, 100.0%]"
+  ],
+  "where": "Table 3",
+  "source": "results/canonical-20261029/eval-canonical.json",
+  "path": "it3m_c@saved/instrument/held_out_recall",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "IPW sample/it3m_c/harmless deletion",
+  "value": "5.14%",
+  "raw": [
+   "5.14% [4.56%, 5.89%]"
+  ],
+  "where": "Table 3",
+  "source": "results/canonical-20261029/eval-canonical.json",
+  "path": "it3m_c@saved/instrument/ipw_harmless_deleted",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "audit100/it3m_c/recall (/158)",
+  "value": "157 (99.4%)",
+  "raw": [
+   "157/158"
+  ],
+  "where": "Table 3",
+  "source": "results/canonical-20261029/eval-canonical.json",
+  "path": "it3m_c@saved/audit100/sensitive_removed",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Held-out/it3m_c/doc leak (/116)",
+  "value": "1 (0.9%)",
+  "raw": [
+   "1/116"
+  ],
+  "where": "Table 3",
+  "source": "results/canonical-20261029/eval-canonical.json",
+  "path": "it3m_c@saved/instrument/held_out_doc_leak",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Cassazione/it3m_c/decision leak (/307)",
+  "value": "2 (0.7%)",
+  "raw": [
+   "2/307 = 0.7% [0.2%, 2.3%]"
+  ],
+  "where": "Table 3",
+  "source": "results/canonical-20261029/eval-canonical.json",
+  "path": "it3m_c@saved/sentenze/decision_leak/all_heads",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Twins/it3m_c/negated kept (/54)",
+  "value": "32 (59.3%)",
+  "raw": [
+   "32/54 = 59.3% [46.0%, 71.3%]"
+  ],
+  "where": "Table 3",
+  "source": "results/canonical-20261029/eval-canonical.json",
+  "path": "it3m_c@saved/counterfactuals/negated/twin_kept (edited harmless)",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Held-out/Presidio, any entity/recall (/372)",
+  "value": "321 (86.3%)",
+  "raw": [
+   "321/372 = 86.3% [82.4%, 89.6%]"
+  ],
+  "where": "Table 3",
+  "source": "results/baselines-ner-20261009/report.json",
+  "path": "presidio_any/final/held_out_recall",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.baselines_ner report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "IPW sample/Presidio, any entity/harmless deletion",
+  "value": "52.87%",
+  "raw": [
+   "52.87% [48.66%, 56.73%]"
+  ],
+  "where": "Table 3",
+  "source": "results/baselines-ner-20261009/report.json",
+  "path": "presidio_any/final/ipw_harmless_deleted",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.baselines_ner report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "audit100/Presidio, any entity/recall (/158)",
+  "value": "122 (77.2%)",
+  "raw": [
+   "122/158"
+  ],
+  "where": "Table 3",
+  "source": "results/baselines-ner-20261009/report.json",
+  "path": "presidio_any/audit100/sensitive_removed",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.baselines_ner report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Held-out/Presidio, any entity/doc leak (/116)",
+  "value": "33 (28.4%)",
+  "raw": [
+   "33/116"
+  ],
+  "where": "Table 3",
+  "source": "results/baselines-ner-20261009/report.json",
+  "path": "presidio_any/final/held_out_doc_leak",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.baselines_ner report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Cassazione/Presidio, any entity/decision leak (/307)",
+  "value": "77 (25.1%)",
+  "raw": [
+   "77/307 = 25.1% [20.6%, 30.2%]"
+  ],
+  "where": "Table 3",
+  "source": "results/baselines-ner-20261009/report.json",
+  "path": "presidio_any/sentenze/decision_leak/all_heads",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.baselines_ner report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Held-out/GLiNER-PII/recall (/372)",
+  "value": "193 (51.9%)",
+  "raw": [
+   "193/372 = 51.9% [46.7%, 57.1%]"
+  ],
+  "where": "Table 3",
+  "source": "results/gliner-calibrated-20261101/report.json",
+  "path": "calibrated/headline/held_out_recall",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.gliner_calibrated collect; score (gliner venv); report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "IPW sample/GLiNER-PII/harmless deletion",
+  "value": "11.49%",
+  "raw": [
+   "11.49% [9.37%, 14.03%]"
+  ],
+  "where": "Table 3",
+  "source": "results/gliner-calibrated-20261101/report.json",
+  "path": "calibrated/headline/ipw_harmless_deleted",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.gliner_calibrated collect; score (gliner venv); report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "audit100/GLiNER-PII/recall (/158)",
+  "value": "68 (43.0%)",
+  "raw": [
+   "68/158"
+  ],
+  "where": "Table 3",
+  "source": "results/gliner-calibrated-20261101/report.json",
+  "path": "calibrated/headline/audit100_recall",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.gliner_calibrated collect; score (gliner venv); report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Held-out/GLiNER-PII/doc leak (/116)",
+  "value": "83 (71.6%)",
+  "raw": [
+   "83/116"
+  ],
+  "where": "Table 3",
+  "source": "results/gliner-calibrated-20261101/report.json",
+  "path": "calibrated/headline/held_out_doc_leak",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.gliner_calibrated collect; score (gliner venv); report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Cassazione/GLiNER-PII/decision leak (/307)",
+  "value": "141 (45.9%)",
+  "raw": [
+   "141/307 = 45.9% [40.4%, 51.5%]"
+  ],
+  "where": "Table 3",
+  "source": "results/gliner-calibrated-20261101/report.json",
+  "path": "calibrated/headline/cassazione_decision_leak",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.gliner_calibrated collect; score (gliner venv); report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Held-out/Gemma 4 12B, composed/recall (/372)",
+  "value": "234 (62.9%)",
+  "raw": [
+   "234/372 = 62.9% [57.8%, 67.8%]"
+  ],
+  "where": "Table 3",
+  "source": "results/llm-baseline-20261009/report-final.json",
+  "path": "llm_composed/held_out_recall",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.baselines_llm final --deletion 600",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "IPW sample/Gemma 4 12B, composed/harmless deletion",
+  "value": "0.00%",
+  "raw": [
+   "0.00% [0.00%, 0.00%] (n=600)"
+  ],
+  "where": "Table 3",
+  "source": "results/llm-baseline-20261009/report-final.json",
+  "path": "llm_composed/ipw_harmless_deleted",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.baselines_llm final --deletion 600",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Held-out/Gemma 4 12B, composed/doc leak (/116)",
+  "value": "65 (56.0%)",
+  "raw": [
+   "65/116"
+  ],
+  "where": "Table 3",
+  "source": "results/llm-baseline-20261009/report-final.json",
+  "path": "llm_composed/held_out_doc_leak",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.baselines_llm final --deletion 600",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Cassazione/Gemma 4 12B, composed/decision leak (/307)",
+  "value": "158 (51.5%)",
+  "raw": [
+   "158/307 = 51.5% [45.9%, 57.0%]"
+  ],
+  "where": "Table 3",
+  "source": "results/llm-baseline-20261009/report-sentenze.json",
+  "path": "llm_composed/decision_leak/all_heads",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.baselines_llm sentenze",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Held-out/A0/recall 95%",
+  "value": "98.5--100%",
+  "raw": [
+   "371/372 = 99.7% [98.5%, 100.0%]"
+  ],
+  "where": "Table 3 caption",
+  "source": "results/canonical-20261029/eval-canonical.json",
+  "path": "A0@saved/instrument/held_out_recall",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "IPW sample/A0/harmless deletion 95%",
+  "value": "6.56--8.05%",
+  "raw": [
+   "7.25% [6.56%, 8.05%]"
+  ],
+  "where": "Table 3 caption",
+  "source": "results/canonical-20261029/eval-canonical.json",
+  "path": "A0@saved/instrument/ipw_harmless_deleted",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Cassazione/A0/decision leak 95%",
+  "value": "2.5--7.1%",
+  "raw": [
+   "13/307 = 4.2% [2.5%, 7.1%]"
+  ],
+  "where": "Table 3 caption",
+  "source": "results/canonical-20261029/eval-canonical.json",
+  "path": "A0@saved/sentenze/decision_leak/all_heads",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Held-out/it3m_c/recall 95%",
+  "value": "98.5--100%",
+  "raw": [
+   "371/372 = 99.7% [98.5%, 100.0%]"
+  ],
+  "where": "Table 3 caption",
+  "source": "results/canonical-20261029/eval-canonical.json",
+  "path": "it3m_c@saved/instrument/held_out_recall",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "IPW sample/it3m_c/harmless deletion 95%",
+  "value": "4.56--5.89%",
+  "raw": [
+   "5.14% [4.56%, 5.89%]"
+  ],
+  "where": "Table 3 caption",
+  "source": "results/canonical-20261029/eval-canonical.json",
+  "path": "it3m_c@saved/instrument/ipw_harmless_deleted",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Cassazione/it3m_c/decision leak 95%",
+  "value": "0.2--2.3%",
+  "raw": [
+   "2/307 = 0.7% [0.2%, 2.3%]"
+  ],
+  "where": "Table 3 caption",
+  "source": "results/canonical-20261029/eval-canonical.json",
+  "path": "it3m_c@saved/sentenze/decision_leak/all_heads",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "it1/global threshold",
+  "value": "0.060",
+  "raw": [
+   [
+    0.06013,
+    0.06013,
+    0.06013,
+    0.06013
+   ]
+  ],
+  "where": "Table 3 caption",
+  "source": "results/final-20261003/eval-final.json",
+  "path": "it1/thresholds",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.final_eval",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "IPW sample/A0/harmless deletion, 600-sentence subsample",
+  "value": "7.27%",
+  "raw": [
+   "7.27% [6.00%, 8.79%] (n=600)"
+  ],
+  "where": "Table 3 caption",
+  "source": "results/llm-baseline-20261009/report-final.json",
+  "path": "a0_production/ipw_harmless_deleted",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.baselines_llm final --deletion 600",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Held-out/Gemma 4 12B, raw/recall",
+  "value": "3.5%",
+  "raw": [
+   "13/372 = 3.5% [1.9%, 5.9%]"
+  ],
+  "where": "Experiments, Results",
+  "source": "results/llm-baseline-20261009/report-final.json",
+  "path": "llm_raw/held_out_recall",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.baselines_llm final --deletion 600",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Held-out/A0 vs it3m_c/doc leak McNemar p",
+  "value": "p=1.0",
+  "raw": [
+   1.0
+  ],
+  "where": "Experiments, Results",
+  "source": "results/canonical-20261029/eval-canonical.json",
+  "path": "it3m_c@saved/leak_stats/instrument/vs_A0/p_exact",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Cassazione/A0 vs it3m_c/decision leak McNemar p",
+  "value": "p=0.0034",
+  "raw": [
+   0.0034
+  ],
+  "where": "Experiments, Results",
+  "source": "results/canonical-20261029/eval-canonical.json",
+  "path": "it3m_c@saved/leak_stats/sentenze/vs_A0/p_exact",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Held-out/A0 vs it3m/doc leak McNemar p",
+  "value": "p=0.63",
+  "raw": [
+   0.625
+  ],
+  "where": "not in the final report",
+  "source": "results/it3-20261009/eval-hybrid.json",
+  "path": "it3m@A0_fixed/leak_stats/instrument/vs_A0/p_exact",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.hybrid_eval",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Keyword subset/A0/recall",
+  "value": "114/115",
+  "raw": [
+   "114/115 = 99.1% [95.3%, 100.0%]"
+  ],
+  "where": "Experiments, Results",
+  "source": "results/canonical-20261029/eval-canonical.json",
+  "path": "A0@saved/instrument/held_out_recall_cue_mined_only",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Keyword subset/it3m_c/recall",
+  "value": "114/115",
+  "raw": [
+   "114/115 = 99.1% [95.3%, 100.0%]"
+  ],
+  "where": "Experiments, Results",
+  "source": "results/canonical-20261029/eval-canonical.json",
+  "path": "it3m_c@saved/instrument/held_out_recall_cue_mined_only",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Keyword subset/Presidio, any entity/recall",
+  "value": "86.1%",
+  "raw": [
+   "99/115 = 86.1% [78.4%, 91.8%]"
+  ],
+  "where": "Experiments, Results",
+  "source": "results/baselines-ner-20261009/report.json",
+  "path": "presidio_any/final/held_out_recall_cue_mined_only",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.baselines_ner report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Keyword subset/GLiNER-PII/recall",
+  "value": "50.4%",
+  "raw": [
+   "58/115 = 50.4% [41.0%, 59.9%]"
+  ],
+  "where": "Experiments, Results",
+  "source": "results/gliner-calibrated-20261101/report.json",
+  "path": "calibrated/headline/held_out_recall_cue_mined_only",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.gliner_calibrated collect; score (gliner venv); report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Keyword subset/positives",
+  "value": "115",
+  "raw": [
+   "114/115 = 99.1% [95.3%, 100.0%]"
+  ],
+  "where": "Table 1 caption; App. F",
+  "source": "results/canonical-20261029/eval-canonical.json",
+  "path": "A0@saved/instrument/held_out_recall_cue_mined_only",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Held-out/positives from the score tranches",
+  "value": "257",
+  "raw": [
+   "371/372 = 99.7% [98.5%, 100.0%]",
+   "114/115 = 99.1% [95.3%, 100.0%]"
+  ],
+  "where": "Table 1 caption; App. F (372 - 115)",
+  "source": "results/canonical-20261029/eval-canonical.json; results/canonical-20261029/eval-canonical.json",
+  "path": "A0@saved/instrument/held_out_recall; A0@saved/instrument/held_out_recall_cue_mined_only",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Held-out/score-tranche candidates, round 1",
+  "value": "150",
+  "raw": [
+   150
+  ],
+  "where": "Table 1 caption; App. F",
+  "source": "results/final-20261003/instrument-summary.json",
+  "path": "positive_candidates/score_tranche",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.final_instrument build",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Corpus/source files",
+  "value": "7,464",
+  "raw": [
+   7464
+  ],
+  "where": "Data, Corpus and splits",
+  "source": "results/canonical-20261029/eval-canonical.json",
+  "path": "frames/corpus/source_files",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Corpus/documents",
+  "value": "5,950",
+  "raw": [
+   5950
+  ],
+  "where": "Intro; Data",
+  "source": "results/canonical-20261029/eval-canonical.json",
+  "path": "frames/corpus/unique_documents",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Corpus/near-duplicate groups",
+  "value": "5,845",
+  "raw": [
+   5845
+  ],
+  "where": "Data",
+  "source": "results/canonical-20261029/eval-canonical.json",
+  "path": "frames/corpus/near_duplicate_groups",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Corpus/documents train, validation, test",
+  "value": "3,521, 1,230 and 1,199",
+  "raw": [
+   3521,
+   1230,
+   1199
+  ],
+  "where": "Data",
+  "source": "results/canonical-20261029/eval-canonical.json; results/canonical-20261029/eval-canonical.json; results/canonical-20261029/eval-canonical.json",
+  "path": "frames/corpus/documents_by_split/train; frames/corpus/documents_by_split/validation; frames/corpus/documents_by_split/test",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Corpus/median sentences per document",
+  "value": "about 180",
+  "raw": [
+   180.0,
+   189.0,
+   182.0
+  ],
+  "where": "Data (train 180, val. 189, test 182)",
+  "source": "results/it3-20261009/corpus-diversity.json; results/it3-20261009/corpus-diversity.json; results/it3-20261009/corpus-diversity.json",
+  "path": "splits/train/sentences_per_doc/median; splits/validation/sentences_per_doc/median; splits/test/sentences_per_doc/median",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.corpus_diversity",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Corpus/sentences (windows)",
+  "value": "about 920,000",
+  "raw": [
+   546961,
+   183387,
+   190404
+  ],
+  "where": "Data, Pre-processing (exact 920,752)",
+  "source": "results/canonical-20261029/eval-canonical.json; results/canonical-20261029/eval-canonical.json; results/canonical-20261029/eval-canonical.json",
+  "path": "frames/corpus/windows/train; frames/corpus/windows/validation; frames/corpus/windows/test",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "audit100/documents",
+  "value": "100",
+  "raw": [
+   100
+  ],
+  "where": "Table 1",
+  "source": "results/canonical-20261029/eval-canonical.json",
+  "path": "frames/corpus/audit_documents",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "audit100/sentences",
+  "value": "37,320",
+  "raw": [
+   37320
+  ],
+  "where": "Data; Table 1",
+  "source": "results/canonical-20261029/eval-canonical.json",
+  "path": "fresh_vs_cached_scores/A0/audit100/sentences_fresh",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "audit100/positives",
+  "value": "158",
+  "raw": [
+   "157/158"
+  ],
+  "where": "Data; Table 1",
+  "source": "results/canonical-20261029/eval-canonical.json",
+  "path": "A0@saved/audit100/sensitive_removed",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "audit100/positive rate",
+  "value": "about one in 240",
+  "raw": [
+   37320,
+   "157/158"
+  ],
+  "where": "Data, Evaluation sets (exact 1 in 236.2)",
+  "source": "results/canonical-20261029/eval-canonical.json; results/canonical-20261029/eval-canonical.json",
+  "path": "fresh_vs_cached_scores/A0/audit100/sentences_fresh; A0@saved/audit100/sensitive_removed",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Test sets/picked sentences (IPW + Held-out + Twins)",
+  "value": "about 2,400",
+  "raw": [
+   2000,
+   372,
+   54
+  ],
+  "where": "Data, Pre-processing (exact 2,426)",
+  "source": "results/final-20261003/instrument-summary.json; results/canonical-20261029/eval-canonical.json; results/clean-20261008/counterfactuals/report.json",
+  "path": "deletion_units; frames/held_out_positives; pairs_kept/negated",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report; PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.counterfactuals score; PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.final_instrument build",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Held-out/documents",
+  "value": "116",
+  "raw": [
+   116
+  ],
+  "where": "Table 1",
+  "source": "results/canonical-20261029/eval-canonical.json",
+  "path": "frames/held_out_positive_documents",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Held-out/positives",
+  "value": "372",
+  "raw": [
+   372
+  ],
+  "where": "Table 1",
+  "source": "results/canonical-20261029/eval-canonical.json",
+  "path": "frames/held_out_positives",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Held-out/positives per head",
+  "value": "famiglia 369, minori 7, salute 2, penale 2",
+  "raw": [
+   "368/369 = 99.7% [98.5%, 100.0%]",
+   "7/7 = 100.0% [59.0%, 100.0%]",
+   "2/2 = 100.0% [15.8%, 100.0%]",
+   "2/2 = 100.0% [15.8%, 100.0%]"
+  ],
+  "where": "Table 1 caption",
+  "source": "results/canonical-20261029/eval-canonical.json; results/canonical-20261029/eval-canonical.json; results/canonical-20261029/eval-canonical.json; results/canonical-20261029/eval-canonical.json",
+  "path": "A0@saved/instrument/held_out_recall_by_head/famiglia; A0@saved/instrument/held_out_recall_by_head/minori; A0@saved/instrument/held_out_recall_by_head/salute; A0@saved/instrument/held_out_recall_by_head/penale",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Held-out/unseen documents (pool)",
+  "value": "868",
+  "raw": [
+   868
+  ],
+  "where": "App. F",
+  "source": "results/final-20261003/instrument-summary.json",
+  "path": "unseen_documents",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.final_instrument build",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Held-out/positives-side documents drawn",
+  "value": "338",
+  "raw": [
+   338
+  ],
+  "where": "App. F",
+  "source": "results/final-20261003/instrument-summary.json",
+  "path": "positives_side_documents",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.final_instrument build",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "IPW sample/documents",
+  "value": "200",
+  "raw": [
+   200
+  ],
+  "where": "Table 1; Metrics",
+  "source": "results/final-20261003/instrument-summary.json",
+  "path": "deletion_documents",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.final_instrument build",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "IPW sample/sentences",
+  "value": "2,000",
+  "raw": [
+   2000
+  ],
+  "where": "Table 1; Metrics",
+  "source": "results/final-20261003/instrument-summary.json",
+  "path": "deletion_units",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.final_instrument build",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "IPW sample/population sentences",
+  "value": "56,094",
+  "raw": [
+   56094
+  ],
+  "where": "Table 1 caption; App. E",
+  "source": "results/final-20261003/instrument-summary.json",
+  "path": "population_sentences",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.final_instrument build",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "IPW sample/band sizes",
+  "value": "11,052, 36,252, 3,453, 1,410, 919, 886, 2,122",
+  "raw": [
+   {
+    "[0.0,0.005)": [
+     11052,
+     286
+    ],
+    "[0.005,0.02)": [
+     36252,
+     286
+    ],
+    "[0.02,0.1)": [
+     3453,
+     286
+    ],
+    "[0.1,0.3)": [
+     1410,
+     286
+    ],
+    "[0.3,0.6)": [
+     919,
+     285
+    ],
+    "[0.6,0.9)": [
+     886,
+     285
+    ],
+    "[0.9,1.01)": [
+     2122,
+     286
+    ]
+   }
+  ],
+  "where": "App. E",
+  "source": "results/final-20261003/instrument-summary.json",
+  "path": "bins",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.final_instrument build",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "IPW sample/drawn per band",
+  "value": "about 286",
+  "raw": [
+   {
+    "[0.0,0.005)": [
+     11052,
+     286
+    ],
+    "[0.005,0.02)": [
+     36252,
+     286
+    ],
+    "[0.02,0.1)": [
+     3453,
+     286
+    ],
+    "[0.1,0.3)": [
+     1410,
+     286
+    ],
+    "[0.3,0.6)": [
+     919,
+     285
+    ],
+    "[0.6,0.9)": [
+     886,
+     285
+    ],
+    "[0.9,1.01)": [
+     2122,
+     286
+    ]
+   }
+  ],
+  "where": "App. E (285 or 286)",
+  "source": "results/final-20261003/instrument-summary.json",
+  "path": "bins",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.final_instrument build",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "IPW sample/weight of the 36,252 band",
+  "value": "about 127",
+  "raw": [
+   {
+    "[0.0,0.005)": [
+     11052,
+     286
+    ],
+    "[0.005,0.02)": [
+     36252,
+     286
+    ],
+    "[0.02,0.1)": [
+     3453,
+     286
+    ],
+    "[0.1,0.3)": [
+     1410,
+     286
+    ],
+    "[0.3,0.6)": [
+     919,
+     285
+    ],
+    "[0.6,0.9)": [
+     886,
+     285
+    ],
+    "[0.9,1.01)": [
+     2122,
+     286
+    ]
+   }
+  ],
+  "where": "App. E (exact 126.8)",
+  "source": "results/final-20261003/instrument-summary.json",
+  "path": "bins",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.final_instrument build",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Cassazione/decisions",
+  "value": "847",
+  "raw": [
+   847
+  ],
+  "where": "Table 1",
+  "source": "results/it3-20261009/corpus-diversity.json",
+  "path": "cassazione/decisions",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.corpus_diversity",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Cassazione/sentences",
+  "value": "1,180",
+  "raw": [
+   1180
+  ],
+  "where": "Table 1",
+  "source": "results/canonical-20261029/eval-canonical.json",
+  "path": "A0@saved/sentenze/units",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Cassazione/years",
+  "value": "2021 to 2026",
+  "raw": [
+   [
+    2021,
+    2026
+   ]
+  ],
+  "where": "Table 1 caption; App. F",
+  "source": "results/it3-20261009/corpus-diversity.json",
+  "path": "cassazione/year_range",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.corpus_diversity",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Cassazione/decisions with positives",
+  "value": "307",
+  "raw": [
+   "13/307 = 4.2% [2.5%, 7.1%]"
+  ],
+  "where": "Table 1 caption",
+  "source": "results/canonical-20261029/eval-canonical.json",
+  "path": "A0@saved/sentenze/decision_leak/all_heads",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Cassazione/positives per head",
+  "value": "salute 67, penale 235, minori 68 and famiglia 173",
+  "raw": [
+   67,
+   235,
+   68,
+   173
+  ],
+  "where": "Table 1 caption",
+  "source": "results/canonical-20261029/eval-canonical.json; results/canonical-20261029/eval-canonical.json; results/canonical-20261029/eval-canonical.json; results/canonical-20261029/eval-canonical.json",
+  "path": "A0@saved/sentenze/salute/positives; A0@saved/sentenze/penale/positives; A0@saved/sentenze/minori/positives; A0@saved/sentenze/famiglia/positives",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Cassazione/max sentences per decision",
+  "value": "3",
+  "raw": [
+   3
+  ],
+  "where": "App. F",
+  "source": "results/canonical-20261029/eval-canonical.json",
+  "path": "A0@saved/sentenze/salute/max_per_decision",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Cassazione/teacher pass agreement",
+  "value": "98.4%, kappa=0.964",
+  "raw": [
+   "1161/1180 = 98.4%",
+   0.964
+  ],
+  "where": "App. F",
+  "source": "results/canonical-20261029/eval-canonical.json; results/canonical-20261029/eval-canonical.json",
+  "path": "cassazione_teacher_agreement/pass_agreement/remove_any; cassazione_teacher_agreement/pass_agreement/remove_any_kappa",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Twins/negated pairs, source groups",
+  "value": "54 pairs, 24 groups",
+  "raw": [
+   54,
+   24
+  ],
+  "where": "Table 1",
+  "source": "results/clean-20261008/counterfactuals/report.json; results/clean-20261008/counterfactuals/report.json",
+  "path": "pairs_kept/negated; pair_source_groups/negated",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.counterfactuals score",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Twins/deceased, company, category swap",
+  "value": "24 deceased, 15 company-subject and 196 category-swap",
+  "raw": [
+   24,
+   15,
+   68,
+   66,
+   62
+  ],
+  "where": "Table 1 caption",
+  "source": "results/clean-20261008/counterfactuals/report.json; results/clean-20261008/counterfactuals/report.json; results/clean-20261008/counterfactuals/report.json; results/clean-20261008/counterfactuals/report.json; results/clean-20261008/counterfactuals/report.json",
+  "path": "pairs_kept/deceased; pairs_kept/company; pairs_kept/fam_to_salute; pairs_kept/fam_to_penale; pairs_kept/fam_to_minori",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.counterfactuals score",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Twins/realism AUC",
+  "value": "0.915",
+  "raw": [
+   0.915
+  ],
+  "where": "not in the final report",
+  "source": "results/clean-20261008/counterfactuals/report.json",
+  "path": "realism_auc/all",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.counterfactuals score",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "A0-train/rows",
+  "value": "7,695",
+  "raw": [
+   7695
+  ],
+  "where": "Abstract; Data; Experiments",
+  "source": "results/proof-20261001/model/proof-train.json",
+  "path": "replay_rows",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.proof_train",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "A0-train/synthetic share",
+  "value": "33.7%",
+  "raw": [
+   7695
+  ],
+  "where": "Data, Labels (private counts 2,591 / 7,695)",
+  "source": "results/proof-20261001/model/proof-train.json",
+  "path": "replay_rows",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.proof_train",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Teacher rows/rows",
+  "value": "1,132",
+  "raw": [
+   1132
+  ],
+  "where": "Experiments",
+  "source": "results/proof-20261001/model/proof-train.json",
+  "path": "sol_rows",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.proof_train",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Edge suite/rows",
+  "value": "1,157",
+  "raw": [
+   1157
+  ],
+  "where": "Experiments",
+  "source": "results/proof-20261001/model/proof-train.json",
+  "path": "edge_rows",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.proof_train",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Cass-train/sentences",
+  "value": "500",
+  "raw": [
+   500
+  ],
+  "where": "Experiments",
+  "source": "results/it3-20261009/cass-summary.json",
+  "path": "units",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.it3_data cass",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Training total (A0-train + Teacher rows + Edge suite + 2 x CF pairs + Cass-train)",
+  "value": "about 12,000",
+  "raw": [
+   7695,
+   1132,
+   1157,
+   500
+  ],
+  "where": "Data, Pre-processing (exact 11,966; CF pairs 741 is private)",
+  "source": "results/proof-20261001/model/proof-train.json; results/proof-20261001/model/proof-train.json; results/proof-20261001/model/proof-train.json; results/it3-20261009/cass-summary.json",
+  "path": "replay_rows; sol_rows; edge_rows; units",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.it3_data cass; PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.proof_train",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "it1/updates, learning rate",
+  "value": "500, 1e-05",
+  "raw": [
+   500,
+   1e-05
+  ],
+  "where": "Experiments",
+  "source": "results/proof-20261001/model/proof-train.json; results/proof-20261001/model/proof-train.json",
+  "path": "updates; lr",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.proof_train",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Probe/two-pass agreement",
+  "value": "293/299 (98.0%), kappa=0.949",
+  "raw": [
+   "293/299 = 98.0%",
+   0.949
+  ],
+  "where": "Data, Labels",
+  "source": "results/phase0-20261003/probe-report.json; results/phase0-20261003/probe-report.json",
+  "path": "label_ceiling_A_vs_B/remove_any; label_ceiling_A_vs_B/remove_any_kappa",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.phase0_label",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "A0/thresholds (3 decimals)",
+  "value": "(0.038, 0.407, 0.020, 0.072)",
+  "raw": [
+   [
+    0.03840220347046852,
+    0.4072083532810211,
+    0.020479485392570496,
+    0.0723867416381836
+   ]
+  ],
+  "where": "Experiments, Threshold calibration",
+  "source": "results/canonical-20261029/eval-canonical.json",
+  "path": "canonical/A0_thresholds",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "A0/thresholds",
+  "value": "0.0384, 0.40721, 0.02048, 0.07239",
+  "raw": [
+   [
+    0.03840220347046852,
+    0.4072083532810211,
+    0.020479485392570496,
+    0.0723867416381836
+   ]
+  ],
+  "where": "App. B",
+  "source": "results/canonical-20261029/eval-canonical.json",
+  "path": "canonical/A0_thresholds",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "it3m_c/penale threshold",
+  "value": "0.0098 (0.0098325)",
+  "raw": [
+   0.0098325340077281
+  ],
+  "where": "Experiments; App. B",
+  "source": "results/canonical-20261029/eval-canonical.json",
+  "path": "penale_selection/saved_threshold",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Validation/all-negative rows",
+  "value": "899",
+  "raw": [
+   899
+  ],
+  "where": "Experiments; App. B",
+  "source": "results/canonical-20261029/eval-canonical.json",
+  "path": "penale_selection/all_negative_rows",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Validation/it3m_c penale fired, recall",
+  "value": "43 rows, 49/53",
+  "raw": [
+   43,
+   "49/53"
+  ],
+  "where": "Experiments, Threshold calibration",
+  "source": "results/canonical-20261029/eval-canonical.json; results/canonical-20261029/eval-canonical.json",
+  "path": "penale_selection/saved_threshold_negatives_fired; penale_selection/saved_threshold_recall",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Validation/firing budget",
+  "value": "5%",
+  "raw": [
+   0.05
+  ],
+  "where": "Experiments, Threshold calibration; App. C",
+  "source": "results/gliner-calibrated-20261101/report.json",
+  "path": "config/negative_firing_budget",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.gliner_calibrated collect; score (gliner venv); report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Validation/it3m_c penale budget",
+  "value": "4.8%",
+  "raw": [
+   0.0098325340077281,
+   0.0098325340077281,
+   true
+  ],
+  "where": "Experiments, Threshold calibration",
+  "source": "results/canonical-20261029/eval-canonical.json; results/canonical-20261029/eval-canonical.json; results/canonical-20261029/eval-canonical.json",
+  "path": "penale_selection/budget_sweep/0.048/in_sample_threshold; penale_selection/saved_threshold; penale_selection/saved_equals_in_sample_rule_at_0.048",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Validation/recall targets",
+  "value": "salute 0.95, penale 0.85, minori 0.98, famiglia 0.98",
+  "raw": [
+   {
+    "salute": 0.95,
+    "penale": 0.85,
+    "minori": 0.98,
+    "famiglia": 0.98
+   }
+  ],
+  "where": "Experiments, Threshold calibration",
+  "source": "results/gliner-calibrated-20261101/report.json",
+  "path": "config/recall_targets",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.gliner_calibrated collect; score (gliner venv); report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Validation/A0/salute fired, recall",
+  "value": "6, 40/42",
+  "raw": [
+   "6/899",
+   "40/42"
+  ],
+  "where": "App. B, Table 6",
+  "source": "results/canonical-20261029/eval-canonical.json; results/canonical-20261029/eval-canonical.json",
+  "path": "validation/A0/salute/negatives_fired; validation/A0/salute/recall",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Validation/A0/penale fired, recall",
+  "value": "16, 46/53",
+  "raw": [
+   "16/899",
+   "46/53"
+  ],
+  "where": "App. B, Table 6",
+  "source": "results/canonical-20261029/eval-canonical.json; results/canonical-20261029/eval-canonical.json",
+  "path": "validation/A0/penale/negatives_fired; validation/A0/penale/recall",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Validation/A0/minori fired, recall",
+  "value": "3, 146/147",
+  "raw": [
+   "3/899",
+   "146/147"
+  ],
+  "where": "App. B, Table 6",
+  "source": "results/canonical-20261029/eval-canonical.json; results/canonical-20261029/eval-canonical.json",
+  "path": "validation/A0/minori/negatives_fired; validation/A0/minori/recall",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Validation/A0/famiglia fired, recall",
+  "value": "39, 293/299",
+  "raw": [
+   "39/899",
+   "293/299"
+  ],
+  "where": "App. B, Table 6",
+  "source": "results/canonical-20261029/eval-canonical.json; results/canonical-20261029/eval-canonical.json",
+  "path": "validation/A0/famiglia/negatives_fired; validation/A0/famiglia/recall",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Validation/it3m_c/salute fired, recall",
+  "value": "4, 35/42",
+  "raw": [
+   "4/899",
+   "35/42"
+  ],
+  "where": "App. B, Table 6",
+  "source": "results/canonical-20261029/eval-canonical.json; results/canonical-20261029/eval-canonical.json",
+  "path": "validation/it3m_c/salute/negatives_fired; validation/it3m_c/salute/recall",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Validation/it3m_c/penale fired, recall",
+  "value": "43, 49/53",
+  "raw": [
+   "43/899",
+   "49/53"
+  ],
+  "where": "App. B, Table 6",
+  "source": "results/canonical-20261029/eval-canonical.json; results/canonical-20261029/eval-canonical.json",
+  "path": "validation/it3m_c/penale/negatives_fired; validation/it3m_c/penale/recall",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Validation/it3m_c/minori fired, recall",
+  "value": "6, 145/147",
+  "raw": [
+   "6/899",
+   "145/147"
+  ],
+  "where": "App. B, Table 6",
+  "source": "results/canonical-20261029/eval-canonical.json; results/canonical-20261029/eval-canonical.json",
+  "path": "validation/it3m_c/minori/negatives_fired; validation/it3m_c/minori/recall",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Validation/it3m_c/famiglia fired, recall",
+  "value": "28, 287/299",
+  "raw": [
+   "28/899",
+   "287/299"
+  ],
+  "where": "App. B, Table 6",
+  "source": "results/canonical-20261029/eval-canonical.json; results/canonical-20261029/eval-canonical.json",
+  "path": "validation/it3m_c/famiglia/negatives_fired; validation/it3m_c/famiglia/recall",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Held-out/A0/recall salute, penale, minori",
+  "value": "2/2, 2/2, 7/7",
+  "raw": [
+   "2/2 = 100.0% [15.8%, 100.0%]",
+   "2/2 = 100.0% [15.8%, 100.0%]",
+   "7/7 = 100.0% [59.0%, 100.0%]"
+  ],
+  "where": "App. C",
+  "source": "results/canonical-20261029/eval-canonical.json; results/canonical-20261029/eval-canonical.json; results/canonical-20261029/eval-canonical.json",
+  "path": "A0@saved/instrument/held_out_recall_by_head/salute; A0@saved/instrument/held_out_recall_by_head/penale; A0@saved/instrument/held_out_recall_by_head/minori",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Cassazione/A0/recall per head",
+  "value": "65/67, 225/235, 67/68, 171/173",
+  "raw": [
+   "65/67 = 97.0% [89.8%, 99.2%]",
+   "225/235 = 95.7% [92.3%, 97.7%]",
+   "67/68 = 98.5% [92.1%, 99.7%]",
+   "171/173 = 98.8% [95.9%, 99.7%]"
+  ],
+  "where": "App. C",
+  "source": "results/canonical-20261029/eval-canonical.json; results/canonical-20261029/eval-canonical.json; results/canonical-20261029/eval-canonical.json; results/canonical-20261029/eval-canonical.json",
+  "path": "A0@saved/sentenze/salute/recall_removed; A0@saved/sentenze/penale/recall_removed; A0@saved/sentenze/minori/recall_removed; A0@saved/sentenze/famiglia/recall_removed",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Held-out/it3m_c/recall salute, penale, minori",
+  "value": "2/2, 2/2, 7/7",
+  "raw": [
+   "2/2 = 100.0% [15.8%, 100.0%]",
+   "2/2 = 100.0% [15.8%, 100.0%]",
+   "7/7 = 100.0% [59.0%, 100.0%]"
+  ],
+  "where": "App. C",
+  "source": "results/canonical-20261029/eval-canonical.json; results/canonical-20261029/eval-canonical.json; results/canonical-20261029/eval-canonical.json",
+  "path": "it3m_c@saved/instrument/held_out_recall_by_head/salute; it3m_c@saved/instrument/held_out_recall_by_head/penale; it3m_c@saved/instrument/held_out_recall_by_head/minori",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Cassazione/it3m_c/recall per head",
+  "value": "67/67, 235/235, 68/68, 171/173",
+  "raw": [
+   "67/67 = 100.0% [94.6%, 100.0%]",
+   "235/235 = 100.0% [98.4%, 100.0%]",
+   "68/68 = 100.0% [94.7%, 100.0%]",
+   "171/173 = 98.8% [95.9%, 99.7%]"
+  ],
+  "where": "App. C",
+  "source": "results/canonical-20261029/eval-canonical.json; results/canonical-20261029/eval-canonical.json; results/canonical-20261029/eval-canonical.json; results/canonical-20261029/eval-canonical.json",
+  "path": "it3m_c@saved/sentenze/salute/recall_removed; it3m_c@saved/sentenze/penale/recall_removed; it3m_c@saved/sentenze/minori/recall_removed; it3m_c@saved/sentenze/famiglia/recall_removed",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "GLiNER-PII/thresholds",
+  "value": "0.116, 0.414, 0.097, 0.271",
+  "raw": [
+   [
+    0.11606443673372269,
+    0.4136389493942261,
+    0.09695236384868622,
+    0.2707218825817108
+   ]
+  ],
+  "where": "App. C",
+  "source": "results/gliner-calibrated-20261101/report.json",
+  "path": "calibrated/thresholds",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.gliner_calibrated collect; score (gliner venv); report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Validation/GLiNER-PII/recall per head",
+  "value": "12/42, 28/53, 144/147, 121/299",
+  "raw": [
+   "12/42",
+   "28/53",
+   "144/147",
+   "121/299"
+  ],
+  "where": "App. C; Discussion",
+  "source": "results/gliner-calibrated-20261101/report.json; results/gliner-calibrated-20261101/report.json; results/gliner-calibrated-20261101/report.json; results/gliner-calibrated-20261101/report.json",
+  "path": "validation/en/salute/chosen/recall; validation/en/penale/chosen/recall; validation/en/minori/chosen/recall; validation/en/famiglia/chosen/recall",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.gliner_calibrated collect; score (gliner venv); report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Validation/GLiNER-PII/labels recalled, English vs Italian",
+  "value": "305 of 541, Italian 221",
+  "raw": [
+   "305/541",
+   "221/541"
+  ],
+  "where": "App. C",
+  "source": "results/gliner-calibrated-20261101/report.json; results/gliner-calibrated-20261101/report.json",
+  "path": "label_choice/en; label_choice/it",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.gliner_calibrated collect; score (gliner venv); report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Held-out/GLiNER-PII/global t 0.05, 0.1, 0.2, 0.3, 0.5 recall",
+  "value": "95.7/86.3/64.0/40.3/22.6%",
+  "raw": [
+   "356/372 = 95.7% [93.1%, 97.5%]",
+   "321/372 = 86.3% [82.4%, 89.6%]",
+   "238/372 = 64.0% [58.9%, 68.9%]",
+   "150/372 = 40.3% [35.3%, 45.5%]",
+   "84/372 = 22.6% [18.4%, 27.2%]"
+  ],
+  "where": "Results; App. C",
+  "source": "results/gliner-calibrated-20261101/report.json; results/gliner-calibrated-20261101/report.json; results/gliner-calibrated-20261101/report.json; results/gliner-calibrated-20261101/report.json; results/gliner-calibrated-20261101/report.json",
+  "path": "global_curve/0.05/held_out_recall; global_curve/0.1/held_out_recall; global_curve/0.2/held_out_recall; global_curve/0.3/held_out_recall; global_curve/0.5/held_out_recall",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.gliner_calibrated collect; score (gliner venv); report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "IPW sample/GLiNER-PII/global t 0.05, 0.1, 0.2, 0.3, 0.5 deletion",
+  "value": "71.63/43.58/13.61/7.42/2.52%",
+  "raw": [
+   "71.63% [68.00%, 75.06%]",
+   "43.58% [39.43%, 47.26%]",
+   "13.61% [11.20%, 15.99%]",
+   "7.42% [5.58%, 9.30%]",
+   "2.52% [1.64%, 3.56%]"
+  ],
+  "where": "Results; App. C",
+  "source": "results/gliner-calibrated-20261101/report.json; results/gliner-calibrated-20261101/report.json; results/gliner-calibrated-20261101/report.json; results/gliner-calibrated-20261101/report.json; results/gliner-calibrated-20261101/report.json",
+  "path": "global_curve/0.05/ipw_harmless_deleted; global_curve/0.1/ipw_harmless_deleted; global_curve/0.2/ipw_harmless_deleted; global_curve/0.3/ipw_harmless_deleted; global_curve/0.5/ipw_harmless_deleted",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.gliner_calibrated collect; score (gliner venv); report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Held-out/GLiNER-PII/minori, salute recall",
+  "value": "7/7, 0/2",
+  "raw": [
+   "7/7 = 100.0% [59.0%, 100.0%]",
+   "0/2 = 0.0% [0.0%, 84.2%]"
+  ],
+  "where": "Discussion",
+  "source": "results/gliner-calibrated-20261101/report.json; results/gliner-calibrated-20261101/report.json",
+  "path": "calibrated/final/held_out_recall_by_head/minori; calibrated/final/held_out_recall_by_head/salute",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.gliner_calibrated collect; score (gliner venv); report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "A0 global threshold/threshold, Held-out recall, IPW deletion",
+  "value": "0.480, 370/372, 5.16%",
+  "raw": [
+   [
+    0.48018,
+    0.48018,
+    0.48018,
+    0.48018
+   ],
+   "370/372 = 99.5% [98.1%, 99.9%]",
+   "5.16% [4.64%, 5.80%]"
+  ],
+  "where": "App. C",
+  "source": "results/final-20261003/eval-final.json; results/final-20261003/eval-final.json; results/final-20261003/eval-final.json",
+  "path": "A0/thresholds; A0/instrument/held_out_recall; A0/instrument/ipw_harmless_deleted",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.final_eval",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "hybrid, hybrid_b/IPW deletion, held-out doc leak",
+  "value": "4.50% and 4.77%, 3/116 and 3/116",
+  "raw": [
+   "4.50% [4.03%, 5.11%]",
+   "4.77% [4.28%, 5.39%]",
+   "3/116",
+   "3/116"
+  ],
+  "where": "App. C",
+  "source": "results/it3-20261009/eval-hybrid.json; results/it3-20261009/eval-hybrid.json; results/it3-20261009/eval-hybrid.json; results/it3-20261009/eval-hybrid.json",
+  "path": "hybrid@A0_fixed/instrument/ipw_harmless_deleted; hybrid_b@A0_fixed/instrument/ipw_harmless_deleted; hybrid@A0_fixed/instrument/held_out_doc_leak; hybrid_b@A0_fixed/instrument/held_out_doc_leak",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.hybrid_eval",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Clean frame/A0/harmless deleted with salute, minori, penale cues vs none",
+  "value": "16.4%, 35.2%, 40.2% vs 7.5%",
+  "raw": [
+   "48/292 = 16.4% [12.6%, 21.1%]",
+   "109/310 = 35.2% [30.1%, 40.6%]",
+   "109/271 = 40.2% [34.6%, 46.2%]",
+   "22/292 = 7.5% [5.0%, 11.1%]"
+  ],
+  "where": "Discussion",
+  "source": "results/canonical-20261029/eval-canonical.json; results/canonical-20261029/eval-canonical.json; results/canonical-20261029/eval-canonical.json; results/canonical-20261029/eval-canonical.json",
+  "path": "A0@saved/clean/harmless_cue_deleted/salute; A0@saved/clean/harmless_cue_deleted/minori; A0@saved/clean/harmless_cue_deleted/penale; A0@saved/clean/harmless_cue_deleted/non_cue",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Cassazione/A0/harmless deleted, penale cue and no cue",
+  "value": "79.1%, 39.3%",
+  "raw": [
+   "129/163 = 79.1% [72.3%, 84.7%]",
+   "112/285 = 39.3% [33.8%, 45.1%]"
+  ],
+  "where": "Discussion, Error analysis",
+  "source": "results/canonical-20261029/eval-canonical.json; results/canonical-20261029/eval-canonical.json",
+  "path": "A0@saved/sentenze/harmless_deleted/penale; A0@saved/sentenze/harmless_deleted/non_cue",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Held-out/A0/harmless neighbours deleted",
+  "value": "410/600",
+  "raw": [
+   "410/600"
+  ],
+  "where": "Discussion, Error analysis",
+  "source": "results/canonical-20261029/eval-canonical.json",
+  "path": "A0@saved/instrument/neighbour_bleed",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Cassazione/A0/decision leak outside famiglia",
+  "value": "11/224",
+  "raw": [
+   "11/224 = 4.9% [2.8%, 8.6%]"
+  ],
+  "where": "Discussion, Error analysis",
+  "source": "results/canonical-20261029/eval-canonical.json",
+  "path": "A0@saved/sentenze/decision_leak/salute_penale_minori",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Clean frame/it3m_c/harmless deleted with salute, minori, penale cues vs none",
+  "value": "17.8%, 38.1%, 38.7% vs 4.8%",
+  "raw": [
+   "52/292 = 17.8% [13.8%, 22.6%]",
+   "118/310 = 38.1% [32.8%, 43.6%]",
+   "105/271 = 38.7% [33.1%, 44.7%]",
+   "14/292 = 4.8% [2.9%, 7.9%]"
+  ],
+  "where": "Discussion",
+  "source": "results/canonical-20261029/eval-canonical.json; results/canonical-20261029/eval-canonical.json; results/canonical-20261029/eval-canonical.json; results/canonical-20261029/eval-canonical.json",
+  "path": "it3m_c@saved/clean/harmless_cue_deleted/salute; it3m_c@saved/clean/harmless_cue_deleted/minori; it3m_c@saved/clean/harmless_cue_deleted/penale; it3m_c@saved/clean/harmless_cue_deleted/non_cue",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Cassazione/it3m_c/harmless deleted, penale cue and no cue",
+  "value": "92.0%, 41.4%",
+  "raw": [
+   "150/163 = 92.0% [86.8%, 95.3%]",
+   "118/285 = 41.4% [35.8%, 47.2%]"
+  ],
+  "where": "Discussion, Error analysis",
+  "source": "results/canonical-20261029/eval-canonical.json; results/canonical-20261029/eval-canonical.json",
+  "path": "it3m_c@saved/sentenze/harmless_deleted/penale; it3m_c@saved/sentenze/harmless_deleted/non_cue",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Held-out/it3m_c/harmless neighbours deleted",
+  "value": "308/600",
+  "raw": [
+   "308/600"
+  ],
+  "where": "Discussion, Error analysis",
+  "source": "results/canonical-20261029/eval-canonical.json",
+  "path": "it3m_c@saved/instrument/neighbour_bleed",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Cassazione/it3m_c/decision leak outside famiglia",
+  "value": "0/224",
+  "raw": [
+   "0/224 = 0.0% [0.0%, 1.7%]"
+  ],
+  "where": "Discussion, Error analysis",
+  "source": "results/canonical-20261029/eval-canonical.json",
+  "path": "it3m_c@saved/sentenze/decision_leak/salute_penale_minori",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Twins/A0/negated originals deleted",
+  "value": "54/54",
+  "raw": [
+   "54/54 = 100.0% [93.4%, 100.0%]"
+  ],
+  "where": "Intro; Discussion; Table 4",
+  "source": "results/canonical-20261029/eval-canonical.json",
+  "path": "A0@saved/counterfactuals/negated/target_removed (original positive)",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Twins/A0/deceased kept",
+  "value": "0/24",
+  "raw": [
+   "0/24 = 0.0% [0.0%, 13.8%]"
+  ],
+  "where": "Intro; Discussion; Table 4",
+  "source": "results/canonical-20261029/eval-canonical.json",
+  "path": "A0@saved/counterfactuals/deceased/twin_kept (edited harmless)",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Twins/it1/deceased kept",
+  "value": "0/24",
+  "raw": [
+   "0/24 = 0.0% [0.0%, 13.8%]"
+  ],
+  "where": "Intro; Discussion; Table 4",
+  "source": "results/it3-20261009/eval-it3.json",
+  "path": "it1@final_global/counterfactuals/deceased/twin_kept (edited harmless)",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.it3_eval final",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Twins/it3/deceased kept",
+  "value": "0/24",
+  "raw": [
+   "0/24 = 0.0% [0.0%, 13.8%]"
+  ],
+  "where": "Intro; Discussion; Table 4",
+  "source": "results/it3-20261009/eval-it3.json",
+  "path": "it3@A0_fixed/counterfactuals/deceased/twin_kept (edited harmless)",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.it3_eval final",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Twins/it3m/deceased kept",
+  "value": "0/24",
+  "raw": [
+   "0/24 = 0.0% [0.0%, 13.8%]"
+  ],
+  "where": "Intro; Discussion; Table 4",
+  "source": "results/it3-20261009/eval-hybrid.json",
+  "path": "it3m@A0_fixed/counterfactuals/deceased/twin_kept (edited harmless)",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.hybrid_eval",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Twins/it3m_c/deceased kept",
+  "value": "0/24",
+  "raw": [
+   "0/24 = 0.0% [0.0%, 13.8%]"
+  ],
+  "where": "Intro; Discussion; Table 4",
+  "source": "results/canonical-20261029/eval-canonical.json",
+  "path": "it3m_c@saved/counterfactuals/deceased/twin_kept (edited harmless)",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.canonical_eval score; then scripts.canonical_eval report",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Phase 0 real-only students/audit deletion at 156/158",
+  "value": "58.9 to 81.0%",
+  "raw": [
+   "22883/37162 = 61.58%",
+   "21889/37162 = 58.90%",
+   "30101/37162 = 81.00%"
+  ],
+  "where": "Discussion (25%, 50%, 100% real)",
+  "source": "results/phase0-20261003/eval-phase0.json; results/phase0-20261003/eval-phase0.json; results/phase0-20261003/eval-phase0.json",
+  "path": "student-25/audit100/harmless_deleted; student-50/audit100/harmless_deleted; student-100/audit100/harmless_deleted",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.phase0_eval",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Human check/items",
+  "value": "186",
+  "raw": [
+   186
+  ],
+  "where": "Abstract; Limitations; Conclusion",
+  "source": "results/human-agreement-20261103/report.json",
+  "path": "answered_items",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.human_agreement",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Human check/identical-set items",
+  "value": "119",
+  "raw": [
+   119
+  ],
+  "where": "Table 5; Limitations (1)",
+  "source": "results/human-agreement-20261103/report.json",
+  "path": "comparisons/sol_reference_items/n_items",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.human_agreement",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Human check/119/Human vs teacher/kappa, exact match",
+  "value": "0.80, 88.2%",
+  "raw": [
+   0.7951,
+   0.8824
+  ],
+  "where": "Table 5; Limitations (1)",
+  "source": "results/human-agreement-20261103/report.json; results/human-agreement-20261103/report.json",
+  "path": "comparisons/sol_reference_items/human_vs_sol/pooled_item_x_head/kappa; comparisons/sol_reference_items/human_vs_sol/exact_set_agreement",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.human_agreement",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Human check/119/Human vs A0's local annotators/kappa, exact match",
+  "value": "0.82, 89.9%",
+  "raw": [
+   0.8198,
+   0.8992
+  ],
+  "where": "Table 5; Limitations (1)",
+  "source": "results/human-agreement-20261103/report.json; results/human-agreement-20261103/report.json",
+  "path": "comparisons/sol_reference_items/human_vs_small/pooled_item_x_head/kappa; comparisons/sol_reference_items/human_vs_small/exact_set_agreement",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.human_agreement",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Human check/119/Teacher vs A0's local annotators/kappa, exact match",
+  "value": "0.92, 95.0%",
+  "raw": [
+   0.9181,
+   0.9496
+  ],
+  "where": "Table 5; Limitations (1)",
+  "source": "results/human-agreement-20261103/report.json; results/human-agreement-20261103/report.json",
+  "path": "comparisons/sol_reference_items/small_vs_sol/pooled_item_x_head/kappa; comparisons/sol_reference_items/small_vs_sol/exact_set_agreement",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.human_agreement",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Human check/v1 items",
+  "value": "49",
+  "raw": [
+   49
+  ],
+  "where": "Table 5; Limitations (1)",
+  "source": "results/human-agreement-20261103/report.json",
+  "path": "comparisons/v1_items/n_items",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.human_agreement",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Human check/49/kappa, human vs teacher and vs A0's local annotators",
+  "value": "0.69 vs 0.41",
+  "raw": [
+   0.6941,
+   0.4117
+  ],
+  "where": "Table 5; Limitations (1)",
+  "source": "results/human-agreement-20261103/report.json; results/human-agreement-20261103/report.json",
+  "path": "comparisons/v1_items/human_vs_sol/pooled_item_x_head/kappa; comparisons/v1_items/human_vs_small/pooled_item_x_head/kappa",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.human_agreement",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Human check/49/exact match, human vs teacher and vs A0's local annotators",
+  "value": "79.6% vs 30.6%",
+  "raw": [
+   0.7959,
+   0.3061
+  ],
+  "where": "Table 5; Limitations (1)",
+  "source": "results/human-agreement-20261103/report.json; results/human-agreement-20261103/report.json",
+  "path": "comparisons/v1_items/human_vs_sol/exact_set_agreement; comparisons/v1_items/human_vs_small/exact_set_agreement",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.human_agreement",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Human check/186/salute positives, LLM reference vs human",
+  "value": "18 vs 2",
+  "raw": [
+   18,
+   2
+  ],
+  "where": "not in the final report",
+  "source": "results/human-agreement-20261103/report.json; results/human-agreement-20261103/report.json",
+  "path": "reproduce_existing/all_answered/per_head/salute/teacher_positives; reproduce_existing/all_answered/per_head/salute/human_positives",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.human_agreement",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Human check/186/human-positive sentences",
+  "value": "47",
+  "raw": [
+   {
+    "tp": 43,
+    "fn": 4,
+    "fp": 47,
+    "tn": 92
+   }
+  ],
+  "where": "not in the final report",
+  "source": "results/human-agreement-20261103/report.json",
+  "path": "reproduce_existing/all_answered/sentence_any_category/confusion",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.human_agreement",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Speed/documents, sentences",
+  "value": "20 documents (4,956 sentences)",
+  "raw": [
+   20,
+   4956
+  ],
+  "where": "App. D; Table 7",
+  "source": "results/speed-20261029/report.json; results/speed-20261029/report.json",
+  "path": "documents/n; documents/sentences_total",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.inference_speed",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Speed/it3m_c/sentences per second, ms per sentence",
+  "value": "45.5, 22",
+  "raw": [
+   45.51
+  ],
+  "where": "App. D; Table 7",
+  "source": "results/speed-20261029/report.json",
+  "path": "methods/it3m_c/median_of_passes/sentences_per_s",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.inference_speed",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Speed/GLiNER-PII/sentences per second, ms per sentence",
+  "value": "42.7, 23",
+  "raw": [
+   42.65
+  ],
+  "where": "App. D; Table 7",
+  "source": "results/speed-20261029/report.json",
+  "path": "methods/gliner_pii@0.3/median_of_passes/sentences_per_s",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.inference_speed",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Speed/Presidio/sentences per second, ms per sentence",
+  "value": "295.8, 3",
+  "raw": [
+   295.83
+  ],
+  "where": "App. D; Table 7",
+  "source": "results/speed-20261029/report.json",
+  "path": "methods/presidio_any/median_of_passes/sentences_per_s",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.inference_speed",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Speed/it3m_c/seconds for a median document",
+  "value": "4.1",
+  "raw": [
+   4.126
+  ],
+  "where": "App. D",
+  "source": "results/speed-20261029/report.json",
+  "path": "methods/it3m_c/median_of_passes/s_per_doc_median",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.inference_speed",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Speed/Gemma 12B/sentences per second, ms per sentence",
+  "value": "0.09--0.3, 3.3k--11.6k",
+  "raw": [
+   {
+    "final_positive": 0.137,
+    "final_deletion": 0.143,
+    "clean": 0.244,
+    "counterfactuals": 0.086,
+    "sentenze": 0.133,
+    "cascade": 0.304
+   }
+  ],
+  "where": "Table 7",
+  "source": "results/speed-20261029/report.json",
+  "path": "gemma_12b_reference/units_per_second_by_instrument",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.inference_speed",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Speed/Gemma 12B/times slower than it3m_c",
+  "value": "150 to 529",
+  "raw": [
+   [
+    150,
+    529
+   ]
+  ],
+  "where": "Results; App. D; Conclusion",
+  "source": "results/speed-20261029/report.json",
+  "path": "gemma_12b_reference/slowdown_vs_it3m_c_range",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.inference_speed",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Speed/hardware",
+  "value": "Apple M4 Max, 36 GB",
+  "raw": [
+   "Apple M4 Max, 36 GB"
+  ],
+  "where": "Approach; App. D",
+  "source": "results/speed-20261029/report.json",
+  "path": "hardware",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.inference_speed",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Speed/Presidio version",
+  "value": "2.2",
+  "raw": [
+   "2.2.362"
+  ],
+  "where": "Approach, Baselines",
+  "source": "results/speed-20261029/report.json",
+  "path": "versions/presidio-analyzer",
+  "command": "PRIVACY_DATA_ROOT=<private dir> PERIZIA_TEXT_ROOT=<texts> PERIZIA_FACTS_ROOT=<facts> PYTHONPATH=src:. python -m scripts.inference_speed",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Size/it3m_c/parameters",
+  "value": "279M",
+  "raw": [],
+  "where": "Table 7; Conclusion (exact 278,813,189)",
+  "source": "private aggregate (table below)",
+  "path": "",
+  "command": "",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Size/GLiNER-PII/parameters",
+  "value": "289M",
+  "raw": [],
+  "where": "Table 7 (exact 288,949,504)",
+  "source": "private aggregate (table below)",
+  "path": "",
+  "command": "",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Size/mDeBERTa-v3-base encoder/parameters",
+  "value": "278M",
+  "raw": [],
+  "where": "Background; Approach (exact 278,218,752)",
+  "source": "private aggregate (table below)",
+  "path": "",
+  "command": "",
+  "status": "report row",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "A0-train/real rows",
+  "value": "5,104",
+  "raw": [
+   5104
+  ],
+  "where": "private aggregate",
+  "source": "$PRIVACY_DATA_ROOT/student-v1-amended-v2/manifest.json",
+  "path": "student-v1-amended-v2/manifest.json :: train/sources/real",
+  "command": "read by hand 2026-11-03 (no results/ JSON)",
+  "status": "typed private aggregate",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "A0-train/synthetic rows",
+  "value": "2,591",
+  "raw": [
+   2591
+  ],
+  "where": "private aggregate",
+  "source": "$PRIVACY_DATA_ROOT/student-v1-amended-v2/manifest.json",
+  "path": "student-v1-amended-v2/manifest.json :: train/sources/synthetic",
+  "command": "read by hand 2026-11-03 (no results/ JSON)",
+  "status": "typed private aggregate",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "CF pairs/total",
+  "value": "741",
+  "raw": [
+   741
+  ],
+  "where": "private aggregate",
+  "source": "$PRIVACY_DATA_ROOT/it3-20261009/model/it3-train.json",
+  "path": "it3-20261009/model/it3-train.json :: pairs",
+  "command": "read by hand 2026-11-03 (no results/ JSON)",
+  "status": "typed private aggregate",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "CF pairs/negation",
+  "value": "207",
+  "raw": [
+   207
+  ],
+  "where": "private aggregate",
+  "source": "$PRIVACY_DATA_ROOT/it3-train.json",
+  "path": "it3-train.json :: pairs_by_kind/negated",
+  "command": "read by hand 2026-11-03 (no results/ JSON)",
+  "status": "typed private aggregate",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "CF pairs/hypothetical",
+  "value": "145",
+  "raw": [
+   145
+  ],
+  "where": "private aggregate",
+  "source": "$PRIVACY_DATA_ROOT/it3-train.json",
+  "path": "it3-train.json :: pairs_by_kind/hypothetical",
+  "command": "read by hand 2026-11-03 (no results/ JSON)",
+  "status": "typed private aggregate",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "CF pairs/deceased subject",
+  "value": "27",
+  "raw": [
+   27
+  ],
+  "where": "private aggregate",
+  "source": "$PRIVACY_DATA_ROOT/it3-train.json",
+  "path": "it3-train.json :: pairs_by_kind/deceased",
+  "command": "read by hand 2026-11-03 (no results/ JSON)",
+  "status": "typed private aggregate",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "CF pairs/company subject",
+  "value": "13",
+  "raw": [
+   13
+  ],
+  "where": "private aggregate",
+  "source": "$PRIVACY_DATA_ROOT/it3-train.json",
+  "path": "it3-train.json :: pairs_by_kind/company",
+  "command": "read by hand 2026-11-03 (no results/ JSON)",
+  "status": "typed private aggregate",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "CF pairs/category swap",
+  "value": "349",
+  "raw": [
+   349
+  ],
+  "where": "private aggregate",
+  "source": "$PRIVACY_DATA_ROOT/it3-train.json",
+  "path": "it3-train.json :: pairs_by_kind/fam_to_* (127+128+94)",
+  "command": "read by hand 2026-11-03 (no results/ JSON)",
+  "status": "typed private aggregate",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Cass-train/training rows (windows)",
+  "value": "615",
+  "raw": [
+   615
+  ],
+  "where": "private aggregate",
+  "source": "$PRIVACY_DATA_ROOT/it3-train.json",
+  "path": "it3-train.json :: cass_rows",
+  "command": "read by hand 2026-11-03 (no results/ JSON)",
+  "status": "typed private aggregate",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "IPW sample/certain harmless",
+  "value": "1,937",
+  "raw": [
+   1937
+  ],
+  "where": "private aggregate",
+  "source": "$PRIVACY_DATA_ROOT/final-20261003/labels-deletion.json",
+  "path": "final-20261003/labels-deletion.json :: not uncertain, no head (6 uncertain, 57 pos.)",
+  "command": "read by hand 2026-11-03 (no results/ JSON)",
+  "status": "typed private aggregate",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Held-out/positives/round 1 cue-mined",
+  "value": "85",
+  "raw": [
+   85
+  ],
+  "where": "private aggregate",
+  "source": "$PRIVACY_DATA_ROOT/final-20261003/positive-private.json x labels-positives.json",
+  "path": "final-20261003/positive-private.json x labels-positives.json :: round 1, origin cue_*",
+  "command": "read by hand 2026-11-03 (no results/ JSON)",
+  "status": "typed private aggregate",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Held-out/positives/round 1 score tranche",
+  "value": "125",
+  "raw": [
+   125
+  ],
+  "where": "private aggregate",
+  "source": "$PRIVACY_DATA_ROOT/same",
+  "path": "same :: round 1, origin score_tranche (150 candidates)",
+  "command": "read by hand 2026-11-03 (no results/ JSON)",
+  "status": "typed private aggregate",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Held-out/positives/round 2 score tranche",
+  "value": "132",
+  "raw": [
+   132
+  ],
+  "where": "private aggregate",
+  "source": "$PRIVACY_DATA_ROOT/same",
+  "path": "same :: round 2 (extend), origin score_tranche (150 candidates)",
+  "command": "read by hand 2026-11-03 (no results/ JSON)",
+  "status": "typed private aggregate",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "Held-out/positives/round 2 famiglia cue sample",
+  "value": "30",
+  "raw": [
+   30
+  ],
+  "where": "private aggregate",
+  "source": "$PRIVACY_DATA_ROOT/same",
+  "path": "same :: round 2 (extend), origin cue_famiglia (150 candidates)",
+  "command": "read by hand 2026-11-03 (no results/ JSON)",
+  "status": "typed private aggregate",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "it3m_c/encoder parameters",
+  "value": "278,218,752",
+  "raw": [
+   278218752
+  ],
+  "where": "private aggregate",
+  "source": "$PRIVACY_DATA_ROOT/student-it3m-c-20261010/model.safetensors header, excl. pooler and classifier",
+  "path": "student-it3m-c-20261010/model.safetensors header, excl. pooler and classifier",
+  "command": "read by hand 2026-11-03 (no results/ JSON)",
+  "status": "typed private aggregate",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "it3m_c/all parameters",
+  "value": "278,813,189",
+  "raw": [
+   278813189
+  ],
+  "where": "private aggregate",
+  "source": "$PRIVACY_DATA_ROOT/student-it3m-c-20261010/model.safetensors header, incl. pooler and 5-way classifier",
+  "path": "student-it3m-c-20261010/model.safetensors header, incl. pooler and 5-way classifier",
+  "command": "read by hand 2026-11-03 (no results/ JSON)",
+  "status": "typed private aggregate",
+  "headline_before": null,
+  "changed": false
+ },
+ {
+  "id": "GLiNER-PII/parameters",
+  "value": "288,949,504",
+  "raw": [
+   288949504
+  ],
+  "where": "private aggregate",
+  "source": "$PRIVACY_DATA_ROOT/cached urchade/gliner_multi_pii-v1 pytorch_model.bin, sum of tensor sizes",
+  "path": "cached urchade/gliner_multi_pii-v1 pytorch_model.bin, sum of tensor sizes",
+  "command": "read by hand 2026-11-03 (no results/ JSON)",
+  "status": "typed private aggregate",
+  "headline_before": null,
   "changed": false
  }
 ]

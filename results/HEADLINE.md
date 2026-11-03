@@ -92,6 +92,9 @@ Sources: `baselines-ner-20261009/report.json`, `llm-baseline-20261009/report-fin
 | GLiNER-PII t=0.3 | 7.42% [5.58%, 9.30%] | 150/372 = 40.3% [35.3, 45.5] | 41.7% | 88/116 |
 | GLiNER-PII t=0.5 | 2.52% [1.64%, 3.56%] | 84/372 = 22.6% [18.4, 27.2] | 19.1% | 105/116 |
 | GLiNER-PII t=0.7 | 0.51% [0.19%, 1.04%] | 41/372 = 11.0% [8.0, 14.7] | 8.7% | 109/116 |
+| GLiNER-PII calibrated (validation, A0 targets, 5% budget) | 11.49% [9.37%, 14.03%] | 193/372 = 51.9% [46.7, 57.1] | 50.4% | 83/116 |
+
+GLiNER-PII calibrated (`gliner-calibrated-20261101/report.json`): English labels chosen on validation (head positives recalled within the 5% budget 305/541 vs Italian 221/541); per-head thresholds salute 0.1161, penale 0.4136, minori 0.0970, famiglia 0.2707; no recall target (0.95/0.85/0.98/0.98) reachable within the budget, so each head takes its maximum validation recall within it (12/42, 28/53, 144/147, 121/299; any-head firing on negatives 120/899). audit100 68/158; negated twins kept 32/54, originals removed 22/54. Re-scoring at t=0.3 reproduces the stored t=0.3 report exactly. Global-threshold curve, held-out recall · IPW: t=0.05 95.7% · 71.63%; 0.1 86.3% · 43.58%; 0.2 64.0% · 13.61%; 0.3 40.3% · 7.42%; 0.5 22.6% · 2.52%.
 
 | Method | IPW harmless deletion (600) [95% CI] | Held-out recall (372) | minori (7) | famiglia (369) | Doc leak |
 |---|---:|---:|---:|---:|---:|
@@ -116,6 +119,7 @@ Source: `sentenze-20261008/report.json`, `baselines-ner-20261009/report.json`, `
 | GLiNER-PII t=0.3 | 43/67 = 64.2% [52.2, 74.6] | 143/235 = 60.9% [54.5, 66.9] | 64/68 = 94.1% [85.8, 97.7] | 122/173 = 70.5% [63.3, 76.8] | 44.0% |
 | GLiNER-PII t=0.5 | 27/67 = 40.3% [29.4, 52.3] | 98/235 = 41.7% [35.6, 48.1] | 62/68 = 91.2% [82.1, 95.9] | 96/173 = 55.5% [48.0, 62.7] | 62.2% |
 | GLiNER-PII t=0.7 | 12/67 = 17.9% [10.6, 28.7] | 54/235 = 23.0% [18.1, 28.8] | 50/68 = 73.5% [62.0, 82.6] | 61/173 = 35.3% [28.5, 42.6] | 80.1% |
+| GLiNER-PII calibrated (validation, A0 targets, 5% budget) | 52/67 = 77.6% [66.3, 85.9] | 128/235 = 54.5% [48.1, 60.7] | 64/68 = 94.1% [85.8, 97.7] | 125/173 = 72.3% [65.2, 78.4] | 45.9% |
 
 | Method | non-cue | any cue | salute | penale | minori | famiglia |
 |---|---:|---:|---:|---:|---:|---:|
@@ -128,6 +132,7 @@ Source: `sentenze-20261008/report.json`, `baselines-ner-20261009/report.json`, `
 | GLiNER-PII t=0.3 | 12.3% | 41.6% | 45.4% | 54.6% | 44.1% | 43.3% |
 | GLiNER-PII t=0.5 | 4.2% | 22.7% | 25.2% | 30.7% | 34.5% | 25.1% |
 | GLiNER-PII t=0.7 | 1.4% | 9.3% | 9.2% | 11.0% | 20.7% | 8.2% |
+| GLiNER-PII calibrated (validation, A0 targets, 5% budget) | 19.3% | 36.7% | 41.1% | 47.9% | 42.8% | 38.6% |
 
 ## 7. Robustness: real-derived counterfactual pairs (A0)
 
@@ -155,3 +160,26 @@ Source: `phase0-20261003/eval-phase0.json`, `phase0-20261003/student-*/manifest.
 | factored 50% real | 7/66/93/477 | 58.90% | 142/158 (0/2, 0/2) | 94.8% / 22.4% | 10/109 |
 | factored 100% real | 19/99/201/1,011 | **81.00%** | 148/158 (0/2, 2/2) | 99.7% / 5.0% | 0/109 |
 
+
+## 9. Report numbers, human check, speed and size (2026-11-03)
+
+Every number the report states now has a row in `results/NUMBERS.md` (section "Report numbers"), labelled with the report's names (`A0`, `it1`, `it3`, `it3m`, `it3m_c`; A0-train, Teacher rows, Edge suite, CF pairs, Cass-train, Held-out, Keyword subset, IPW sample, audit100, Cassazione, Twins, Human check) and formatted as the report prints it.
+
+Held-out positives by origin (private aggregate, counts only): of the 372, 115 were found by keywords (85 in the first mining round, 30 from the 150 famiglia cue samples of the second round) and 257 came from the two score tranches of 150 candidates each, ranked by the highest `A0`/`it1` score (125 in round 1, 132 in round 2). The keyword subset is the 115.
+
+| Human check (`human-agreement-20261103/report.json`) | Items | kappa (pooled) | Exact label set |
+|---|---:|---:|---:|
+| Human vs teacher | 119 | 0.80 | 88.2% |
+| Human vs A0's local annotators | 119 | 0.82 | 89.9% |
+| Teacher vs A0's local annotators | 119 | 0.92 | 95.0% |
+| Human vs teacher, v1 items | 49 | 0.69 | 80% |
+| Human vs A0's local annotators, v1 items | 49 | 0.41 | 31% |
+
+| System (`speed-20261029/report.json`) | Size | Device | Sent./s | ms/sent. |
+|---|---|---|---:|---:|
+| `it3m_c` | 279M (encoder 278M) | GPU | 45.5 | 22 |
+| GLiNER-PII | 289M | GPU | 42.7 | 23 |
+| Presidio | rules+CNN | CPU | 295.8 | 3 |
+| Gemma 12B | 12B, 4-bit | GPU | 0.09-0.3 | 3.3k-11.6k |
+
+Parameter counts are read from the checkpoints (no results JSON): `it3m_c` 278,813,189 in all, 278,218,752 in the encoder; GLiNER-PII 288,949,504.
