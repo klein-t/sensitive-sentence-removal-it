@@ -1,0 +1,997 @@
+{
+ "note": "stratified sample; kappas are sample-level, not population estimates",
+ "a0_rule": "window kept iff both certain, same 5-label set; item iff all windows kept",
+ "answered_items": 186,
+ "fidelity_v1": {
+  "per_model": {
+   "privacy-qwen": {
+    "all_rows_in_original_batches": {
+     "rows": 347,
+     "exact_label_set_match": 1.0,
+     "uncertain_flag_match": 1.0,
+     "per_label": {
+      "salute": {
+       "match_rate": 1.0,
+       "stored_positives": 21,
+       "rerun_positives": 21,
+       "kappa": 1.0
+      },
+      "penale": {
+       "match_rate": 1.0,
+       "stored_positives": 27,
+       "rerun_positives": 27,
+       "kappa": 1.0
+      },
+      "minori": {
+       "match_rate": 1.0,
+       "stored_positives": 45,
+       "rerun_positives": 45,
+       "kappa": 1.0
+      },
+      "famiglia": {
+       "match_rate": 1.0,
+       "stored_positives": 58,
+       "rerun_positives": 58,
+       "kappa": 1.0
+      },
+      "altre_categorie": {
+       "match_rate": 1.0,
+       "stored_positives": 1,
+       "rerun_positives": 1,
+       "kappa": 1.0
+      }
+     },
+     "batch_size_changed": 0
+    },
+    "v1_target_windows": {
+     "rows": 55,
+     "exact_label_set_match": 1.0,
+     "uncertain_flag_match": 1.0,
+     "per_label": {
+      "salute": {
+       "match_rate": 1.0,
+       "stored_positives": 17,
+       "rerun_positives": 17,
+       "kappa": 1.0
+      },
+      "penale": {
+       "match_rate": 1.0,
+       "stored_positives": 24,
+       "rerun_positives": 24,
+       "kappa": 1.0
+      },
+      "minori": {
+       "match_rate": 1.0,
+       "stored_positives": 16,
+       "rerun_positives": 16,
+       "kappa": 1.0
+      },
+      "famiglia": {
+       "match_rate": 1.0,
+       "stored_positives": 6,
+       "rerun_positives": 6,
+       "kappa": 1.0
+      },
+      "altre_categorie": {
+       "match_rate": 1.0,
+       "stored_positives": 0,
+       "rerun_positives": 0,
+       "kappa": null
+      }
+     },
+     "batch_size_changed": 0
+    }
+   },
+   "privacy-gemma": {
+    "all_rows_in_original_batches": {
+     "rows": 347,
+     "exact_label_set_match": 0.9942,
+     "uncertain_flag_match": 1.0,
+     "per_label": {
+      "salute": {
+       "match_rate": 1.0,
+       "stored_positives": 17,
+       "rerun_positives": 17,
+       "kappa": 1.0
+      },
+      "penale": {
+       "match_rate": 1.0,
+       "stored_positives": 29,
+       "rerun_positives": 29,
+       "kappa": 1.0
+      },
+      "minori": {
+       "match_rate": 1.0,
+       "stored_positives": 47,
+       "rerun_positives": 47,
+       "kappa": 1.0
+      },
+      "famiglia": {
+       "match_rate": 0.9942,
+       "stored_positives": 48,
+       "rerun_positives": 46,
+       "kappa": 0.9754
+      },
+      "altre_categorie": {
+       "match_rate": 1.0,
+       "stored_positives": 0,
+       "rerun_positives": 0,
+       "kappa": null
+      }
+     },
+     "batch_size_changed": 0
+    },
+    "v1_target_windows": {
+     "rows": 55,
+     "exact_label_set_match": 0.9818,
+     "uncertain_flag_match": 1.0,
+     "per_label": {
+      "salute": {
+       "match_rate": 1.0,
+       "stored_positives": 17,
+       "rerun_positives": 17,
+       "kappa": 1.0
+      },
+      "penale": {
+       "match_rate": 1.0,
+       "stored_positives": 24,
+       "rerun_positives": 24,
+       "kappa": 1.0
+      },
+      "minori": {
+       "match_rate": 1.0,
+       "stored_positives": 16,
+       "rerun_positives": 16,
+       "kappa": 1.0
+      },
+      "famiglia": {
+       "match_rate": 0.9818,
+       "stored_positives": 6,
+       "rerun_positives": 5,
+       "kappa": 0.8991
+      },
+      "altre_categorie": {
+       "match_rate": 1.0,
+       "stored_positives": 0,
+       "rerun_positives": 0,
+       "kappa": null
+      }
+     },
+     "batch_size_changed": 0
+    }
+   }
+  },
+  "stored_items_reconstructed": 54,
+  "stored_agreed_label_equals_key_reference": 54,
+  "agreed_items": {
+   "items": 54,
+   "rerun_survives": 53,
+   "rerun_exact_set_equal_stored_on_survivors": 53,
+   "per_head_match_rate_strict": {
+    "salute": 0.9815,
+    "penale": 0.9815,
+    "minori": 0.9815,
+    "famiglia": 0.9815
+   },
+   "per_head_match_rate_on_survivors": {
+    "salute": 1.0,
+    "penale": 1.0,
+    "minori": 1.0,
+    "famiglia": 1.0
+   }
+  }
+ },
+ "survival": {
+  "v1_items": {
+   "items": 54,
+   "labelled_by_both": 54,
+   "both_certain": 54,
+   "same_label_set": 53,
+   "survive_a0_rule": 53,
+   "windows": 55,
+   "head_agreement_items": {
+    "salute": 54,
+    "penale": 54,
+    "minori": 54,
+    "famiglia": 53,
+    "altre_categorie": 54
+   },
+   "head_agreement_items_both_certain": {
+    "salute": 54,
+    "penale": 54,
+    "minori": 54,
+    "famiglia": 53,
+    "altre_categorie": 54
+   },
+   "surviving_positive_items": {
+    "salute": 17,
+    "penale": 23,
+    "minori": 15,
+    "famiglia": 5
+   }
+  },
+  "other_items": {
+   "items": 140,
+   "labelled_by_both": 140,
+   "both_certain": 140,
+   "same_label_set": 123,
+   "survive_a0_rule": 123,
+   "windows": 147,
+   "head_agreement_items": {
+    "salute": 138,
+    "penale": 137,
+    "minori": 140,
+    "famiglia": 128,
+    "altre_categorie": 140
+   },
+   "head_agreement_items_both_certain": {
+    "salute": 138,
+    "penale": 137,
+    "minori": 140,
+    "famiglia": 128,
+    "altre_categorie": 140
+   },
+   "surviving_positive_items": {
+    "salute": 1,
+    "penale": 2,
+    "minori": 9,
+    "famiglia": 29
+   }
+  },
+  "answered_items_surviving": 170
+ },
+ "sol_v1_labels_available": 51,
+ "reproduce_existing": {
+  "all_answered": {
+   "n_items": 186,
+   "per_head": {
+    "salute": {
+     "human_positives": 2,
+     "teacher_positives": 18,
+     "kappa": 0.1842
+    },
+    "penale": {
+     "human_positives": 18,
+     "teacher_positives": 24,
+     "kappa": 0.7858
+    },
+    "minori": {
+     "human_positives": 11,
+     "teacher_positives": 25,
+     "kappa": 0.5763
+    },
+    "famiglia": {
+     "human_positives": 29,
+     "teacher_positives": 41,
+     "kappa": 0.6854
+    }
+   },
+   "pooled_item_x_head": {
+    "kappa": 0.6281,
+    "confusion": {
+     "tp": 56,
+     "fn": 4,
+     "fp": 52,
+     "tn": 632
+    }
+   },
+   "sentence_any_category": {
+    "kappa": 0.4427,
+    "confusion": {
+     "tp": 43,
+     "fn": 4,
+     "fp": 47,
+     "tn": 92
+    }
+   },
+   "exact_set_agreement": 0.7204
+  },
+  "by_label_provenance": {
+   "sol_consensus": {
+    "n_items": 134,
+    "per_head": {
+     "salute": {
+      "human_positives": 1,
+      "teacher_positives": 2,
+      "kappa": 0.6633
+     },
+     "penale": {
+      "human_positives": 3,
+      "teacher_positives": 2,
+      "kappa": 0.7964
+     },
+     "minori": {
+      "human_positives": 9,
+      "teacher_positives": 10,
+      "kappa": 0.9434
+     },
+     "famiglia": {
+      "human_positives": 27,
+      "teacher_positives": 35,
+      "kappa": 0.7077
+     }
+    },
+    "pooled_item_x_head": {
+     "kappa": 0.7919,
+     "confusion": {
+      "tp": 36,
+      "fn": 4,
+      "fp": 13,
+      "tn": 483
+     }
+    },
+    "sentence_any_category": {
+     "kappa": 0.6862,
+     "confusion": {
+      "tp": 26,
+      "fn": 4,
+      "fp": 12,
+      "tn": 92
+     }
+    },
+    "exact_set_agreement": 0.8731
+   },
+   "two_local_annotators_agreed": {
+    "n_items": 52,
+    "per_head": {
+     "salute": {
+      "human_positives": 1,
+      "teacher_positives": 16,
+      "kappa": 0.0845
+     },
+     "penale": {
+      "human_positives": 15,
+      "teacher_positives": 22,
+      "kappa": 0.712
+     },
+     "minori": {
+      "human_positives": 2,
+      "teacher_positives": 15,
+      "kappa": 0.1796
+     },
+     "famiglia": {
+      "human_positives": 2,
+      "teacher_positives": 6,
+      "kappa": 0.4694
+     }
+    },
+    "pooled_item_x_head": {
+     "kappa": 0.4235,
+     "confusion": {
+      "tp": 20,
+      "fn": 0,
+      "fp": 39,
+      "tn": 149
+     }
+    },
+    "sentence_any_category": {
+     "kappa": 0.0,
+     "confusion": {
+      "tp": 17,
+      "fn": 0,
+      "fp": 35,
+      "tn": 0
+     }
+    },
+    "exact_set_agreement": 0.3269
+   }
+  }
+ },
+ "comparisons": {
+  "all_with_small_and_sol": {
+   "n_items": 168,
+   "human_vs_small": {
+    "n_items": 168,
+    "per_head": {
+     "salute": {
+      "human_positives": 2,
+      "small_positives": 17,
+      "kappa": 0.1933
+     },
+     "penale": {
+      "human_positives": 15,
+      "small_positives": 22,
+      "kappa": 0.7883
+     },
+     "minori": {
+      "human_positives": 9,
+      "small_positives": 22,
+      "kappa": 0.5461
+     },
+     "famiglia": {
+      "human_positives": 25,
+      "small_positives": 33,
+      "kappa": 0.7094
+     }
+    },
+    "pooled_item_x_head": {
+     "kappa": 0.6252,
+     "confusion": {
+      "tp": 48,
+      "fn": 3,
+      "fp": 46,
+      "tn": 575
+     }
+    },
+    "sentence_any_category": {
+     "kappa": 0.447,
+     "confusion": {
+      "tp": 37,
+      "fn": 3,
+      "fp": 42,
+      "tn": 86
+     }
+    },
+    "exact_set_agreement": 0.7262
+   },
+   "human_vs_sol": {
+    "n_items": 168,
+    "per_head": {
+     "salute": {
+      "human_positives": 2,
+      "sol_positives": 2,
+      "kappa": 1.0
+     },
+     "penale": {
+      "human_positives": 15,
+      "sol_positives": 12,
+      "kappa": 0.7184
+     },
+     "minori": {
+      "human_positives": 9,
+      "sol_positives": 10,
+      "kappa": 0.9442
+     },
+     "famiglia": {
+      "human_positives": 25,
+      "sol_positives": 35,
+      "kappa": 0.6773
+     }
+    },
+    "pooled_item_x_head": {
+     "kappa": 0.7625,
+     "confusion": {
+      "tp": 43,
+      "fn": 8,
+      "fp": 16,
+      "tn": 605
+     }
+    },
+    "sentence_any_category": {
+     "kappa": 0.6828,
+     "confusion": {
+      "tp": 32,
+      "fn": 8,
+      "fp": 12,
+      "tn": 116
+     }
+    },
+    "exact_set_agreement": 0.8571
+   },
+   "small_vs_sol": {
+    "n_items": 168,
+    "per_head": {
+     "salute": {
+      "small_positives": 17,
+      "sol_positives": 2,
+      "kappa": 0.1933
+     },
+     "penale": {
+      "small_positives": 22,
+      "sol_positives": 12,
+      "kappa": 0.6759
+     },
+     "minori": {
+      "small_positives": 22,
+      "sol_positives": 10,
+      "kappa": 0.5916
+     },
+     "famiglia": {
+      "small_positives": 33,
+      "sol_positives": 35,
+      "kappa": 0.7788
+     }
+    },
+    "pooled_item_x_head": {
+     "kappa": 0.641,
+     "confusion": {
+      "tp": 52,
+      "fn": 42,
+      "fp": 7,
+      "tn": 571
+     }
+    },
+    "sentence_any_category": {
+     "kappa": 0.4732,
+     "confusion": {
+      "tp": 40,
+      "fn": 39,
+      "fp": 4,
+      "tn": 85
+     }
+    },
+    "exact_set_agreement": 0.7262
+   }
+  },
+  "sol_reference_items": {
+   "n_items": 119,
+   "human_vs_small": {
+    "n_items": 119,
+    "per_head": {
+     "salute": {
+      "human_positives": 1,
+      "small_positives": 1,
+      "kappa": 1.0
+     },
+     "penale": {
+      "human_positives": 2,
+      "small_positives": 2,
+      "kappa": 1.0
+     },
+     "minori": {
+      "human_positives": 7,
+      "small_positives": 8,
+      "kappa": 0.9289
+     },
+     "famiglia": {
+      "human_positives": 23,
+      "small_positives": 28,
+      "kappa": 0.7262
+     }
+    },
+    "pooled_item_x_head": {
+     "kappa": 0.8198,
+     "confusion": {
+      "tp": 30,
+      "fn": 3,
+      "fp": 9,
+      "tn": 434
+     }
+    },
+    "sentence_any_category": {
+     "kappa": 0.7405,
+     "confusion": {
+      "tp": 22,
+      "fn": 3,
+      "fp": 8,
+      "tn": 86
+     }
+    },
+    "exact_set_agreement": 0.8992
+   },
+   "human_vs_sol": {
+    "n_items": 119,
+    "per_head": {
+     "salute": {
+      "human_positives": 1,
+      "sol_positives": 1,
+      "kappa": 1.0
+     },
+     "penale": {
+      "human_positives": 2,
+      "sol_positives": 2,
+      "kappa": 1.0
+     },
+     "minori": {
+      "human_positives": 7,
+      "sol_positives": 8,
+      "kappa": 0.9289
+     },
+     "famiglia": {
+      "human_positives": 23,
+      "sol_positives": 30,
+      "kappa": 0.686
+     }
+    },
+    "pooled_item_x_head": {
+     "kappa": 0.7951,
+     "confusion": {
+      "tp": 30,
+      "fn": 3,
+      "fp": 11,
+      "tn": 432
+     }
+    },
+    "sentence_any_category": {
+     "kappa": 0.7015,
+     "confusion": {
+      "tp": 22,
+      "fn": 3,
+      "fp": 10,
+      "tn": 84
+     }
+    },
+    "exact_set_agreement": 0.8824
+   },
+   "small_vs_sol": {
+    "n_items": 119,
+    "per_head": {
+     "salute": {
+      "small_positives": 1,
+      "sol_positives": 1,
+      "kappa": 1.0
+     },
+     "penale": {
+      "small_positives": 2,
+      "sol_positives": 2,
+      "kappa": 1.0
+     },
+     "minori": {
+      "small_positives": 8,
+      "sol_positives": 8,
+      "kappa": 1.0
+     },
+     "famiglia": {
+      "small_positives": 28,
+      "sol_positives": 30,
+      "kappa": 0.8633
+     }
+    },
+    "pooled_item_x_head": {
+     "kappa": 0.9181,
+     "confusion": {
+      "tp": 37,
+      "fn": 2,
+      "fp": 4,
+      "tn": 433
+     }
+    },
+    "sentence_any_category": {
+     "kappa": 0.8692,
+     "confusion": {
+      "tp": 28,
+      "fn": 2,
+      "fp": 4,
+      "tn": 85
+     }
+    },
+    "exact_set_agreement": 0.9496
+   }
+  },
+  "v1_items": {
+   "n_items": 49,
+   "human_vs_small": {
+    "n_items": 49,
+    "per_head": {
+     "salute": {
+      "human_positives": 1,
+      "small_positives": 16,
+      "kappa": 0.0824
+     },
+     "penale": {
+      "human_positives": 13,
+      "small_positives": 20,
+      "kappa": 0.6873
+     },
+     "minori": {
+      "human_positives": 2,
+      "small_positives": 14,
+      "kappa": 0.1923
+     },
+     "famiglia": {
+      "human_positives": 2,
+      "small_positives": 5,
+      "kappa": 0.5449
+     }
+    },
+    "pooled_item_x_head": {
+     "kappa": 0.4117,
+     "confusion": {
+      "tp": 18,
+      "fn": 0,
+      "fp": 37,
+      "tn": 141
+     }
+    },
+    "sentence_any_category": {
+     "kappa": 0.0,
+     "confusion": {
+      "tp": 15,
+      "fn": 0,
+      "fp": 34,
+      "tn": 0
+     }
+    },
+    "exact_set_agreement": 0.3061
+   },
+   "human_vs_sol": {
+    "n_items": 49,
+    "per_head": {
+     "salute": {
+      "human_positives": 1,
+      "sol_positives": 1,
+      "kappa": 1.0
+     },
+     "penale": {
+      "human_positives": 13,
+      "sol_positives": 10,
+      "kappa": 0.6044
+     },
+     "minori": {
+      "human_positives": 2,
+      "sol_positives": 2,
+      "kappa": 1.0
+     },
+     "famiglia": {
+      "human_positives": 2,
+      "sol_positives": 5,
+      "kappa": 0.5449
+     }
+    },
+    "pooled_item_x_head": {
+     "kappa": 0.6941,
+     "confusion": {
+      "tp": 13,
+      "fn": 5,
+      "fp": 5,
+      "tn": 173
+     }
+    },
+    "sentence_any_category": {
+     "kappa": 0.6438,
+     "confusion": {
+      "tp": 10,
+      "fn": 5,
+      "fp": 2,
+      "tn": 32
+     }
+    },
+    "exact_set_agreement": 0.7959
+   },
+   "small_vs_sol": {
+    "n_items": 49,
+    "per_head": {
+     "salute": {
+      "small_positives": 16,
+      "sol_positives": 1,
+      "kappa": 0.0824
+     },
+     "penale": {
+      "small_positives": 20,
+      "sol_positives": 10,
+      "kappa": 0.5421
+     },
+     "minori": {
+      "small_positives": 14,
+      "sol_positives": 2,
+      "kappa": 0.1923
+     },
+     "famiglia": {
+      "small_positives": 5,
+      "sol_positives": 5,
+      "kappa": 0.3318
+     }
+    },
+    "pooled_item_x_head": {
+     "kappa": 0.3164,
+     "confusion": {
+      "tp": 15,
+      "fn": 40,
+      "fp": 3,
+      "tn": 138
+     }
+    },
+    "sentence_any_category": {
+     "kappa": 0.0,
+     "confusion": {
+      "tp": 12,
+      "fn": 37,
+      "fp": 0,
+      "tn": 0
+     }
+    },
+    "exact_set_agreement": 0.1837
+   }
+  },
+  "sol_reference_non_survivors_human_vs_sol": {
+   "n_items": 15,
+   "per_head": {
+    "salute": {
+     "human_positives": 0,
+     "sol_positives": 1,
+     "kappa": 0.0
+    },
+    "penale": {
+     "human_positives": 1,
+     "sol_positives": 0,
+     "kappa": 0.0
+    },
+    "minori": {
+     "human_positives": 2,
+     "sol_positives": 2,
+     "kappa": 1.0
+    },
+    "famiglia": {
+     "human_positives": 4,
+     "sol_positives": 5,
+     "kappa": 0.8421
+    }
+   },
+   "pooled_item_x_head": {
+    "kappa": 0.7716,
+    "confusion": {
+     "tp": 6,
+     "fn": 1,
+     "fp": 2,
+     "tn": 51
+    }
+   },
+   "sentence_any_category": {
+    "kappa": 0.5714,
+    "confusion": {
+     "tp": 4,
+     "fn": 1,
+     "fp": 2,
+     "tn": 8
+    }
+   },
+   "exact_set_agreement": 0.8
+  },
+  "human_vs_small_all_survivors": {
+   "n_items": 170,
+   "per_head": {
+    "salute": {
+     "human_positives": 2,
+     "small_positives": 17,
+     "kappa": 0.1935
+    },
+    "penale": {
+     "human_positives": 17,
+     "small_positives": 24,
+     "kappa": 0.8066
+    },
+    "minori": {
+     "human_positives": 9,
+     "small_positives": 22,
+     "kappa": 0.5466
+    },
+    "famiglia": {
+     "human_positives": 25,
+     "small_positives": 33,
+     "kappa": 0.7101
+    }
+   },
+   "pooled_item_x_head": {
+    "kappa": 0.6344,
+    "confusion": {
+     "tp": 50,
+     "fn": 3,
+     "fp": 46,
+     "tn": 581
+    }
+   },
+   "sentence_any_category": {
+    "kappa": 0.4577,
+    "confusion": {
+     "tp": 39,
+     "fn": 3,
+     "fp": 42,
+     "tn": 86
+    }
+   },
+   "exact_set_agreement": 0.7294
+  },
+  "v1_survivors_human_vs_september_stored": {
+   "n_items": 51,
+   "per_head": {
+    "salute": {
+     "human_positives": 1,
+     "teacher_positives": 16,
+     "kappa": 0.0838
+    },
+    "penale": {
+     "human_positives": 15,
+     "teacher_positives": 22,
+     "kappa": 0.709
+    },
+    "minori": {
+     "human_positives": 2,
+     "teacher_positives": 14,
+     "kappa": 0.1947
+    },
+    "famiglia": {
+     "human_positives": 2,
+     "teacher_positives": 5,
+     "kappa": 0.546
+    }
+   },
+   "pooled_item_x_head": {
+    "kappa": 0.4379,
+    "confusion": {
+     "tp": 20,
+     "fn": 0,
+     "fp": 37,
+     "tn": 147
+    }
+   },
+   "sentence_any_category": {
+    "kappa": 0.0,
+    "confusion": {
+     "tp": 17,
+     "fn": 0,
+     "fp": 34,
+     "tn": 0
+    }
+   },
+   "exact_set_agreement": 0.3333
+  },
+  "v1_survivors_human_vs_rerun": {
+   "n_items": 51,
+   "per_head": {
+    "salute": {
+     "human_positives": 1,
+     "small_positives": 16,
+     "kappa": 0.0838
+    },
+    "penale": {
+     "human_positives": 15,
+     "small_positives": 22,
+     "kappa": 0.709
+    },
+    "minori": {
+     "human_positives": 2,
+     "small_positives": 14,
+     "kappa": 0.1947
+    },
+    "famiglia": {
+     "human_positives": 2,
+     "small_positives": 5,
+     "kappa": 0.546
+    }
+   },
+   "pooled_item_x_head": {
+    "kappa": 0.4379,
+    "confusion": {
+     "tp": 20,
+     "fn": 0,
+     "fp": 37,
+     "tn": 147
+    }
+   },
+   "sentence_any_category": {
+    "kappa": 0.0,
+    "confusion": {
+     "tp": 17,
+     "fn": 0,
+     "fp": 34,
+     "tn": 0
+    }
+   },
+   "exact_set_agreement": 0.3333
+  }
+ },
+ "runs": {
+  "privacy-qwen/fidelity": {
+   "rows_this_run": 347,
+   "batches_this_run": 44,
+   "errors": 0,
+   "schema_recovery_requests": 0,
+   "wall_seconds": 1394.7,
+   "concurrency": 2
+  },
+  "privacy-qwen/new": {
+   "rows_this_run": 147,
+   "batches_this_run": 19,
+   "errors": 0,
+   "schema_recovery_requests": 0,
+   "wall_seconds": 591.2,
+   "concurrency": 2
+  },
+  "privacy-gemma/fidelity": {
+   "rows_this_run": 347,
+   "batches_this_run": 44,
+   "errors": 0,
+   "schema_recovery_requests": 0,
+   "wall_seconds": 396.2,
+   "concurrency": 2
+  },
+  "privacy-gemma/new": {
+   "rows_this_run": 147,
+   "batches_this_run": 19,
+   "errors": 0,
+   "schema_recovery_requests": 0,
+   "wall_seconds": 173.5,
+   "concurrency": 2
+  }
+ }
+}
