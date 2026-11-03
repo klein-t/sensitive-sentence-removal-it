@@ -12,6 +12,7 @@ Writes `iter2-units.json` for the labeler and private mappings; prints counts.
 
 from __future__ import annotations
 
+import argparse
 import json
 import random
 import re
@@ -96,6 +97,7 @@ def edge_units() -> list[dict[str, Any]]:
 
 
 def main() -> None:
+    argparse.ArgumentParser(description=__doc__).parse_args()
     rng = random.Random(20261002)
     thr = v1_thresholds()
     appraisal = build_frame()["appraisal"]

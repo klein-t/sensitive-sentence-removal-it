@@ -8,6 +8,7 @@ context on each side under an opaque ID. Prints counts only.
 
 from __future__ import annotations
 
+import argparse
 import json
 import random
 import re
@@ -79,6 +80,7 @@ def unit(text: str, spans: list[tuple[int, int]], i: int) -> dict[str, Any]:
 
 
 def main() -> None:
+    argparse.ArgumentParser(description=__doc__).parse_args()
     rng = random.Random(1134)
     thr = v1_thresholds()
     # Targets longer than the unit cap would be shown truncated; leave them out.

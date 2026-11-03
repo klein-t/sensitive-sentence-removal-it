@@ -13,6 +13,7 @@ identifier is printed or written.
 
 from __future__ import annotations
 
+import argparse
 import json
 import os
 import re
@@ -163,6 +164,7 @@ def cassazione() -> dict[str, Any]:
 
 
 def main() -> None:
+    argparse.ArgumentParser(description=__doc__).parse_args()
     meta = db_meta()
     corpus = json.loads((CORPUS / "documents.json").read_text())
     df: Counter[str] = Counter()

@@ -140,7 +140,7 @@ def document_targets(text: str, tokenizer: Any) -> list[tuple[int, int, int]]:
     """(start, end, sentence index) for every target, covering every sentence.
 
     Uses v1's windows and its token-fitting subdivision, so coverage is the
-    same as the production redactor's.
+    same as the local redactor's.
     """
     spans = sentence_spans(text)
     index = {span: i for i, span in enumerate(spans)}

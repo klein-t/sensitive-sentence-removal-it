@@ -1,8 +1,8 @@
 """Persistent local detection and deterministic whole-sentence redaction.
 
 Errors return no document text. Artifact integrity and complete target coverage
-are checked independently of the classifier's statistical quality; deployment
-approval still requires the independent evaluation gate.
+are checked independently of the classifier's statistical quality; its
+quality is measured separately by the evaluation scripts.
 """
 
 from __future__ import annotations

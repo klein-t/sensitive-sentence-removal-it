@@ -14,6 +14,7 @@ A0 on the same documents. Reads cached scores only; prints aggregates only.
 
 from __future__ import annotations
 
+import argparse
 import json
 import math
 from collections import defaultdict
@@ -176,6 +177,7 @@ def variants() -> dict[str, tuple[dict[str, Scores], list[float]]]:
 
 
 def main() -> None:
+    argparse.ArgumentParser(description=__doc__).parse_args()
     out: dict[str, Any] = {}
     leaks: dict[str, dict[str, dict[str, bool]]] = defaultdict(dict)
     for name, (sc, thr) in variants().items():

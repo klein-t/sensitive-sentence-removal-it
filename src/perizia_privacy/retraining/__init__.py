@@ -1,1 +1,1 @@
-"""Isolated research contracts; not wired to production or historical A0."""
+"""Isolated research contracts; not used by the historical A0."""

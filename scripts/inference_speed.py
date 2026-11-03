@@ -5,7 +5,7 @@ Each method is timed end to end per document, from the raw document string to a
 keep/remove decision for every sentence. Sentence splitting is included for all
 three and is the same function (`corpus.sentence_spans`):
 
-* it3m_c: `LocalRedactor.redact` exactly as deployed (fp32, MPS, batch 8; it
+* it3m_c: `LocalRedactor.redact` with its default settings (fp32, MPS, batch 8; it
   splits, windows with +-200 chars of context, scores and renders).
 * Presidio: `sentence_spans`, then the `baselines_ner.py` engine (spaCy
   `it_core_news_lg`, predefined Italian registry, BatchAnalyzerEngine) on the
@@ -45,7 +45,7 @@ ROOT = Path(os.environ.get("PRIVACY_DATA_ROOT", "data/private"))
 MODEL = ROOT / "student-it3m-c-20261010"
 N_DOCS = 20
 PASSES = 3
-OURS_BATCH = 8  # LocalRedactor default, as used by the production pipeline
+OURS_BATCH = 8  # LocalRedactor default batch size
 
 # Exactly the baselines_ner.py configuration (kept local so this script needs no
 # private files from that stage).

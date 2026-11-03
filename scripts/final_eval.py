@@ -11,6 +11,7 @@ Prints aggregates only.
 
 from __future__ import annotations
 
+import argparse
 import json
 import random
 from collections import defaultdict
@@ -203,6 +204,7 @@ def instrument_metrics(sc: Scores, thr: list[float]) -> dict[str, Any]:
 
 
 def main() -> None:
+    argparse.ArgumentParser(description=__doc__).parse_args()
     private_dir(F)
     cache = F / "eval-scores.json"
     keys = instrument_keys()
